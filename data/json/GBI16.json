@@ -1,0 +1,59 @@
+{
+  "Category": "Finance",
+  "TableName": "GBI16",
+  "Description": "GBI Row 16 \n - Employees",
+  "PrimaryKeys": [
+    "HistoryId",
+    "RowId"
+  ],
+  "Fields": [
+    {
+      "Field": "HistoryId",
+      "Description": "History Key",
+      "Related": "OGBI",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "RowId",
+      "Description": "Row Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "EmpNo",
+      "Description": "Employee Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "EmpName",
+      "Description": "Employee Name",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 30,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "Category": "Administration",
+  "TableName": "OCNA",
+  "Description": "CNAE Code",
+  "PrimaryKeys": [
+    "AbsId"
+  ],
+  "Fields": [
+    {
+      "Field": "AbsId",
+      "Description": "Internal Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CNAECode",
+      "Description": "Code",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 9,
+      "IsNullable": false,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Descrip",
+      "Description": "Description",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "ntext",
+      "SqlSize": 1073741823,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

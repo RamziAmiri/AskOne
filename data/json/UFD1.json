@@ -1,0 +1,72 @@
+{
+  "Category": "Administration",
+  "TableName": "UFD1",
+  "Description": "User \n Fields - Values Definitions",
+  "PrimaryKeys": [
+    "TableID",
+    "FieldID",
+    "IndexID"
+  ],
+  "Fields": [
+    {
+      "Field": "TableID",
+      "Description": "Table",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "FieldID",
+      "Description": "Field",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "IndexID",
+      "Description": "Index",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "FldValue",
+      "Description": "Value",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 254,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Descr",
+      "Description": "Description",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 254,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

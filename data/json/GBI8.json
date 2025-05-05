@@ -1,0 +1,95 @@
+{
+  "Category": "Finance",
+  "TableName": "GBI8",
+  "Description": "GBI \n Row 8 - Enterprise's Balance Sheet",
+  "PrimaryKeys": [
+    "HistoryId",
+    "RowId"
+  ],
+  "Fields": [
+    {
+      "Field": "HistoryId",
+      "Description": "History Key",
+      "Related": "OGBI",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "RowId",
+      "Description": "Row Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "AcctName",
+      "Description": "Account Name",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 100,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "LineNum",
+      "Description": "Line Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 6,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "YearBAmt",
+      "Description": "Year Begin Amount",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "PerEAmt",
+      "Description": "Period End Amount",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "RepDate",
+      "Description": "Report Date",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

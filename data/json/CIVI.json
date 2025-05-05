@@ -1,0 +1,223 @@
+{
+  "Category": "Inventory_and_Production",
+  "TableName": "CIVI",
+  "Description": "IVI Config File",
+  "PrimaryKeys": [
+    "AbsEntry"
+  ],
+  "Fields": [
+    {
+      "Field": "AbsEntry",
+      "Description": "Internal Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "EnableRun",
+      "Description": "Enable Run",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "Y",
+          "Yes"
+        ],
+        [
+          "N",
+          "No"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "EnblRunDt",
+      "Description": "Enable Run Date",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "datetime",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "MsgSource",
+      "Description": "Object ID of Message Source",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "IsOILMUpd",
+      "Description": "Is OILM Updated",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "N",
+          "No"
+        ],
+        [
+          "Y",
+          "Yes"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "EnblDays",
+      "Description": "Enable Valid In Days",
+      "Related": "",
+      "DefaultValue": "30",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "LstChkMsg",
+      "Description": "Last Checked OILM Message",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "LstMsgDate",
+      "Description": "Last Build Message Date",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "datetime",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "LstHndlMsg",
+      "Description": "Last Handled OILM Message",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "EnableUpd",
+      "Description": "Enable Update",
+      "Related": "",
+      "DefaultValue": "Y",
+      "ValidValues": [
+        [
+          "Y",
+          "Yes"
+        ],
+        [
+          "N",
+          "No"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "IgnPreUpd",
+      "Description": "Ignore Previous Update",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "Y",
+          "Yes"
+        ],
+        [
+          "N",
+          "No"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ForceRSP",
+      "Description": "Force RSP Precheck",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "Y",
+          "Yes"
+        ],
+        [
+          "N",
+          "No"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ReorderFrm",
+      "Description": "Reorder 8.8 Messages: From DateReorderFrm",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "datetime",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ReorderTo",
+      "Description": "Reorder 8.8 Messages: To Date",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "datetime",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

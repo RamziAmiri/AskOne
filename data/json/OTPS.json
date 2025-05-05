@@ -1,0 +1,46 @@
+{
+  "Category": "Administration",
+  "TableName": "OTPS",
+  "Description": "Tax Parameter",
+  "PrimaryKeys": [
+    "AbsId"
+  ],
+  "Fields": [
+    {
+      "Field": "AbsId",
+      "Description": "Internal Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Code",
+      "Description": "Code",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 5,
+      "IsNullable": false,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Descr",
+      "Description": "Description",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 100,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

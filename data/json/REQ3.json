@@ -1,0 +1,60 @@
+{
+  "Category": "Service",
+  "TableName": "REQ3",
+  "Description": "External \n System Call Request - Message Argument List",
+  "PrimaryKeys": [
+    "AbsEntry",
+    "LineId",
+    "ArgName"
+  ],
+  "Fields": [
+    {
+      "Field": "AbsEntry",
+      "Description": "Request ID",
+      "Related": "OREQ",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "LineId",
+      "Description": "Message Line ID",
+      "Related": "REQ1",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ArgName",
+      "Description": "Argument Name",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ArgValue",
+      "Description": "Argument Value",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 254,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

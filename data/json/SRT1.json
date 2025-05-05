@@ -1,0 +1,83 @@
+{
+  "Category": "Reports",
+  "TableName": "SRT1",
+  "Description": "Korean \n Summary Report - Rows1",
+  "PrimaryKeys": [
+    "SumRptId",
+    "SeqNo"
+  ],
+  "Fields": [
+    {
+      "Field": "SumRptId",
+      "Description": "Summary Rpt ID",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 100,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "SeqNo",
+      "Description": "Sequence Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CardNum",
+      "Description": "Business Partner Total Numbers",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "TransNum",
+      "Description": "Total Trans Number Under BP",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "BaseAmt",
+      "Description": "Total Base Amount Under BPs",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "TaxAmt",
+      "Description": "Total Tax Amount Under BPs",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

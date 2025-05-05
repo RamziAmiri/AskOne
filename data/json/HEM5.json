@@ -1,0 +1,221 @@
+{
+  "Category": "Human_Resources",
+  "TableName": "HEM5",
+  "Description": "Employee \n Data Ownership Authorization",
+  "PrimaryKeys": [
+    "empID",
+    "Object"
+  ],
+  "Fields": [
+    {
+      "Field": "empID",
+      "Description": "Employee No.",
+      "Related": "OHEM",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Object",
+      "Description": "The Object Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Peer",
+      "Description": "Peer Authorization",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "F",
+          "Full"
+        ],
+        [
+          "R",
+          "Read Only"
+        ],
+        [
+          "N",
+          "None"
+        ],
+        [
+          "U",
+          "Undefined"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Manager",
+      "Description": "Manager Authorization",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "F",
+          "Full"
+        ],
+        [
+          "R",
+          "Read Only"
+        ],
+        [
+          "N",
+          "None"
+        ],
+        [
+          "U",
+          "Undefined"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Subord",
+      "Description": "Subordinate Authorization",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "F",
+          "Full"
+        ],
+        [
+          "R",
+          "Read Only"
+        ],
+        [
+          "N",
+          "None"
+        ],
+        [
+          "U",
+          "Undefined"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Dept",
+      "Description": "Department Authorization",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "F",
+          "Full"
+        ],
+        [
+          "R",
+          "Read Only"
+        ],
+        [
+          "N",
+          "None"
+        ],
+        [
+          "U",
+          "Undefined"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Branch",
+      "Description": "Branch Authorization",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "F",
+          "Full"
+        ],
+        [
+          "R",
+          "Read Only"
+        ],
+        [
+          "N",
+          "None"
+        ],
+        [
+          "U",
+          "Undefined"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Team",
+      "Description": "Team Authorization",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "F",
+          "Full"
+        ],
+        [
+          "R",
+          "Read Only"
+        ],
+        [
+          "N",
+          "None"
+        ],
+        [
+          "U",
+          "Undefined"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "AC",
+      "Description": "Cache Access Counter",
+      "Related": "",
+      "DefaultValue": "0",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

@@ -1,0 +1,814 @@
+{
+  "Category": "Banking",
+  "TableName": "OBNK",
+  "Description": "External \n Bank Statement Received",
+  "PrimaryKeys": [
+    "AcctCode",
+    "Sequence"
+  ],
+  "Fields": [
+    {
+      "Field": "IdNumber",
+      "Description": "External Bank Statement No.",
+      "Related": "OBNH",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "AcctCode",
+      "Description": "Account Number",
+      "Related": "OACT",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 15,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Sequence",
+      "Description": "Sequence No.",
+      "Related": "",
+      "DefaultValue": "0",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "AcctName",
+      "Description": "Account Name",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 100,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Ref",
+      "Description": "Reference",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 27,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DueDate",
+      "Description": "Due Date",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "datetime",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Memo",
+      "Description": "Details",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 254,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DebAmount",
+      "Description": "Debit Amount (FC)",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DebAmntCur",
+      "Description": "Currency for Accounts Payable",
+      "Related": "OCRN",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 3,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CredAmnt",
+      "Description": "Credit Amount (FC)",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CredAmntCu",
+      "Description": "Credit Currency",
+      "Related": "OCRN",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 3,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "balance",
+      "Description": "Balance",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "BankMatch",
+      "Description": "Reconciliation No.",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DataSource",
+      "Description": "Data Source",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "N",
+          "Unknown"
+        ],
+        [
+          "I",
+          "Interface"
+        ],
+        [
+          "U",
+          "Update"
+        ],
+        [
+          "M",
+          "Import"
+        ],
+        [
+          "O",
+          "DI API"
+        ],
+        [
+          "A",
+          "Doc. Generation Wizard"
+        ],
+        [
+          "D",
+          "Restore Wizard"
+        ],
+        [
+          "P",
+          "Partner Implementation"
+        ],
+        [
+          "T",
+          "Year Transfer"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "UserSign",
+      "Description": "User Signature",
+      "Related": "OUSR",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ExternCode",
+      "Description": "External Code",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 30,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CardCode",
+      "Description": "BP Code",
+      "Related": "OCRD",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 15,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CardName",
+      "Description": "BP Name",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 100,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "StatemNo",
+      "Description": "Statement Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DocNum",
+      "Description": "Invoice Document",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 27,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "PaymCreat",
+      "Description": "Payment Created",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "Y",
+          "Yes"
+        ],
+        [
+          "N",
+          "No"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "LineStatus",
+      "Description": "Row Status",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "VisOrder",
+      "Description": "Visual Order",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DocNumType",
+      "Description": "Doc. No. Source",
+      "Related": "",
+      "DefaultValue": "D",
+      "ValidValues": [
+        [
+          "P",
+          "Payment Reference No."
+        ],
+        [
+          "I",
+          "ISR"
+        ],
+        [
+          "D",
+          "Doc Num"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Memo2",
+      "Description": "Details 2",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 254,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "PaymentRef",
+      "Description": "Payment Reference No.",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 27,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "autoCreate",
+      "Description": "Manually/Automatically Create",
+      "Related": "",
+      "DefaultValue": "M",
+      "ValidValues": [
+        [
+          "M",
+          "Manual"
+        ],
+        [
+          "A",
+          "Automatic"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "BSLineDate",
+      "Description": "Bank Statement Entry Date",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "datetime",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "BSValuDate",
+      "Description": "Bank Statement Due Date",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "datetime",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "InOpCode",
+      "Description": "Internal Bank Operation Code",
+      "Related": "OBTC",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Cleared",
+      "Description": "Cleared",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "Y",
+          "Yes"
+        ],
+        [
+          "N",
+          "No"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "OposAct",
+      "Description": "BP Bank Account",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 50,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DebAmntLC",
+      "Description": "Debit Amount (LC)",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CredAmntLC",
+      "Description": "Credit Amount (LC)",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ExchngRate",
+      "Description": "Exchange Rate",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "BPIBAN",
+      "Description": "IBAN of the BP Bank Account",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 50,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Fee",
+      "Description": "Fee on the Line",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "PmnPstDate",
+      "Description": "Payment Posting Date",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "datetime",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "PmnValDate",
+      "Description": "Payment Due Date",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "datetime",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "LnDocDate",
+      "Description": "Line Document Date",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "datetime",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "VatAmntLC",
+      "Description": "VAT Amount (LC)",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "VatAmntFC",
+      "Description": "VAT Amount (FC)",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "JDTID",
+      "Description": "Journal Entry ID",
+      "Related": "OJDT",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "PmntID",
+      "Description": "Payment ID",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ObjCrtType",
+      "Description": "Document Type",
+      "Related": "",
+      "DefaultValue": "24",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "PstMethod",
+      "Description": "Posting Method",
+      "Related": "",
+      "DefaultValue": "C",
+      "ValidValues": [
+        [
+          "A",
+          "G/L Account from/to Bank Account"
+        ],
+        [
+          "C",
+          "BP from/to Bank Account"
+        ],
+        [
+          "J",
+          "Interim Account from/to Bank Account"
+        ],
+        [
+          "E",
+          "External Reconciliation"
+        ],
+        [
+          "I",
+          "Ignore"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "FeeAct",
+      "Description": "G/L Account for Fee",
+      "Related": "OACT",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 15,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "FeeProfitC",
+      "Description": "Fee Distribution Rule",
+      "Related": "OOCR",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "FeeProj",
+      "Description": "Project Fee",
+      "Related": "OPRJ",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "BpBankCode",
+      "Description": "BP Bank Code",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 30,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "FeeProfit2",
+      "Description": "Fee Distribution Rule2",
+      "Related": "OOCR",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "FeeProfit3",
+      "Description": "Fee Distribution Rule3",
+      "Related": "OOCR",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "FeeProfit4",
+      "Description": "Fee Distribution Rule4",
+      "Related": "OOCR",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "FeeProfit5",
+      "Description": "Fee Distribution Rule5",
+      "Related": "OOCR",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ApplWTSum",
+      "Description": "Applied WTax Sum",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "InfoLog",
+      "Description": "Information Log",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 254,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "LineOrigin",
+      "Description": "Row Origin",
+      "Related": "",
+      "DefaultValue": "R",
+      "ValidValues": [
+        [
+          "R",
+          "Regular"
+        ],
+        [
+          "A",
+          "Archive"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "BPSwift",
+      "Description": "BP BIC/SWIFT Code",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 50,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

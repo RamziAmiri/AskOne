@@ -1,0 +1,137 @@
+{
+  "Category": "Reports",
+  "TableName": "ORFL",
+  "Description": "Already \n Displayed 347, 349 and WTax Reports",
+  "PrimaryKeys": [
+    "ReportType",
+    "DocType",
+    "DocEntry",
+    "LineNum",
+    "TaxCode",
+    "OrdinalNum"
+  ],
+  "Fields": [
+    {
+      "Field": "ReportType",
+      "Description": "Report Type",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": [
+        [
+          "1",
+          "347"
+        ],
+        [
+          "2",
+          "349"
+        ],
+        [
+          "3",
+          "WT"
+        ],
+        [
+          "4",
+          "O & P"
+        ],
+        [
+          "5",
+          "Annual List"
+        ],
+        [
+          "6",
+          "Tax Report"
+        ]
+      ],
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DocType",
+      "Description": "Document Type",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": [
+        [
+          "13",
+          "Invoice"
+        ],
+        [
+          "14",
+          "Revert Invoice"
+        ],
+        [
+          "18",
+          "Purchase"
+        ],
+        [
+          "19",
+          "Revert purchase"
+        ],
+        [
+          "203",
+          "A/R Down Payment"
+        ],
+        [
+          "204",
+          "A/P Down Payment"
+        ]
+      ],
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DocEntry",
+      "Description": "Document Internal ID",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "LineNum",
+      "Description": "Row No.",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "TaxCode",
+      "Description": "Tax Code",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "OrdinalNum",
+      "Description": "Ordinal Num (BTF & Cancelled)",
+      "Related": "",
+      "DefaultValue": "-1",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    }
+  ]
+}

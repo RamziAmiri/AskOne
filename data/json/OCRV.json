@@ -1,0 +1,425 @@
+{
+  "Category": "Banking",
+  "TableName": "OCRV",
+  "Description": "Credit Payments",
+  "PrimaryKeys": [
+    "AbsId",
+    "PayId",
+    "Instance"
+  ],
+  "Fields": [
+    {
+      "Field": "AbsId",
+      "Description": "Seq. No. in Amount",
+      "Related": "OCRH",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "PayId",
+      "Description": "Payment No.",
+      "Related": "",
+      "DefaultValue": "0",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CreditCard",
+      "Description": "Credit Card",
+      "Related": "OCRC",
+      "DefaultValue": "0",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CrdCardNum",
+      "Description": "Credit Card  No.",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 64,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CardValid",
+      "Description": "Credit Card Validity",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "datetime",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "VoucherNum",
+      "Description": "Voucher Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "OwnerIdNum",
+      "Description": "ID Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 15,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "OwnerPhone",
+      "Description": "Telephone",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "PayDate",
+      "Description": "Payment Date",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "datetime",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "PayAmount",
+      "Description": "Payment Amount",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CreditCurr",
+      "Description": "Credit Currency",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 3,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CreditRate",
+      "Description": "Credit Rate",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Deposited",
+      "Description": "Paid",
+      "Related": "",
+      "DefaultValue": "O",
+      "ValidValues": [
+        [
+          "C",
+          "Closed"
+        ],
+        [
+          "O",
+          "Open"
+        ],
+        [
+          "S",
+          "Postdated"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DepNum2",
+      "Description": "Postdated Deposit Key",
+      "Related": "ODPT",
+      "DefaultValue": "0",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DepNum",
+      "Description": "Payment Internal ID",
+      "Related": "ODPS",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "AcctCode",
+      "Description": "Account for Payments",
+      "Related": "OACT",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 15,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "VouchAcct",
+      "Description": "Voucher Account",
+      "Related": "OACT",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 15,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CreditAcct",
+      "Description": "Credit Account",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 15,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CardCode",
+      "Description": "Customer Code",
+      "Related": "OCRD",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 15,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CrTypeCode",
+      "Description": "Payment Method Code",
+      "Related": "OCRP",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "NumOfPmnts",
+      "Description": "Number of Payments",
+      "Related": "",
+      "DefaultValue": "1",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Canceled",
+      "Description": "Cancelled",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "Y",
+          "Yes"
+        ],
+        [
+          "N",
+          "No"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Storno",
+      "Description": "Cancel Transaction",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "Y",
+          "Yes"
+        ],
+        [
+          "N",
+          "No"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Transfered",
+      "Description": "Postponed to Next Year",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "Y",
+          "Yes"
+        ],
+        [
+          "N",
+          "No"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Instance",
+      "Description": "Instance",
+      "Related": "",
+      "DefaultValue": "0",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DataSource",
+      "Description": "Data Source",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "N",
+          "Unknown"
+        ],
+        [
+          "I",
+          "Interface"
+        ],
+        [
+          "U",
+          "Update"
+        ],
+        [
+          "M",
+          "Import"
+        ],
+        [
+          "O",
+          "DI API"
+        ],
+        [
+          "A",
+          "Doc. Generation Wizard"
+        ],
+        [
+          "D",
+          "Restore Wizard"
+        ],
+        [
+          "P",
+          "Partner Implementation"
+        ],
+        [
+          "T",
+          "Year Transfer"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "UserSign",
+      "Description": "User Signature",
+      "Related": "OUSR",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "TransRef",
+      "Description": "Trans. Reference",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

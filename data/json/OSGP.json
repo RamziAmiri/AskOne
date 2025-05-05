@@ -1,0 +1,46 @@
+{
+  "Category": "Service",
+  "TableName": "OSGP",
+  "Description": "Service \n Group for Brazil",
+  "PrimaryKeys": [
+    "AbsEntry"
+  ],
+  "Fields": [
+    {
+      "Field": "AbsEntry",
+      "Description": "Service Group ID",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ServiceGrp",
+      "Description": "Service Group",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 3,
+      "IsNullable": false,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Descrip",
+      "Description": "Description",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 70,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

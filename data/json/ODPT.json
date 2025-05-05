@@ -1,0 +1,461 @@
+{
+  "Category": "Banking",
+  "TableName": "ODPT",
+  "Description": "Postdated Deposit",
+  "PrimaryKeys": [
+    "DeposId"
+  ],
+  "Fields": [
+    {
+      "Field": "DeposId",
+      "Description": "Payment Internal ID",
+      "Related": "",
+      "DefaultValue": "0",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DeposType",
+      "Description": "Payment Type",
+      "Related": "",
+      "DefaultValue": "K",
+      "ValidValues": [
+        [
+          "K",
+          "Check Deposit"
+        ],
+        [
+          "V",
+          "Credit Deposit"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DeposDate",
+      "Description": "Payment Date",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "datetime",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DeposCurr",
+      "Description": "Currency for Payments",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 3,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "BanckAcct",
+      "Description": "SAP Business One Acct Code f.",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 15,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Memo",
+      "Description": "Details",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 250,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "LocTotal",
+      "Description": "Total (LC)",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "FcTotal",
+      "Description": "Total (FC)",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "SysTotal",
+      "Description": "Total (SC)",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "TransAbs",
+      "Description": "Journal Entry Key",
+      "Related": "OJDT",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Ref1",
+      "Description": "Reference 1",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 11,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Ref2",
+      "Description": "Reference 2",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 11,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DocRate",
+      "Description": "Payment Rate",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Splited",
+      "Description": "Split",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "Y",
+          "Yes"
+        ],
+        [
+          "N",
+          "No"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "VatAct",
+      "Description": "Tax Account",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 15,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ComissAct",
+      "Description": "Commissions Account",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 15,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "VatTotal",
+      "Description": "Total Tax",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Comission",
+      "Description": "Commission",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ComissDate",
+      "Description": "Commission Date",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "datetime",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "TaxDate",
+      "Description": "Document Date",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "datetime",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DataSource",
+      "Description": "Data Source",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "N",
+          "Unknown"
+        ],
+        [
+          "I",
+          "Interface"
+        ],
+        [
+          "U",
+          "Update"
+        ],
+        [
+          "M",
+          "Import"
+        ],
+        [
+          "O",
+          "DI API"
+        ],
+        [
+          "A",
+          "Doc. Generation Wizard"
+        ],
+        [
+          "D",
+          "Restore Wizard"
+        ],
+        [
+          "P",
+          "Partner Implementation"
+        ],
+        [
+          "T",
+          "Year Transfer"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ObjType",
+      "Description": "Object Type",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "FinncPriod",
+      "Description": "Posting Period",
+      "Related": "OFPR",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "VatTotlSys",
+      "Description": "Total Tax on Input (SC)",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ComissnSys",
+      "Description": "Total Commission (SC)",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "UserSign",
+      "Description": "User Signature",
+      "Related": "OUSR",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CommisVat",
+      "Description": "Commission VAT Group",
+      "Related": "OVTG",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Project",
+      "Description": "Project Code",
+      "Related": "OPRJ",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "OcrCode",
+      "Description": "Distribution Rule",
+      "Related": "OOCR",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "OcrCode2",
+      "Description": "Distribution Rule 2",
+      "Related": "OOCR",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "OcrCode3",
+      "Description": "Distribution Rule 3",
+      "Related": "OOCR",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "OcrCode4",
+      "Description": "Distribution Rule 4",
+      "Related": "OOCR",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "OcrCode5",
+      "Description": "Distribution Rule 5",
+      "Related": "OOCR",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

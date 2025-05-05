@@ -1,0 +1,439 @@
+{
+  "Category": "Banking",
+  "TableName": "BNK2",
+  "Description": "Bank \n Statement - Recommendation List",
+  "PrimaryKeys": [
+    "IdNumber",
+    "BSLine",
+    "ListLineID"
+  ],
+  "Fields": [
+    {
+      "Field": "IdNumber",
+      "Description": "Bank Statement ID",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "BSLine",
+      "Description": "Bank Statement Line ID",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ListLineID",
+      "Description": "List Line ID",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DocID",
+      "Description": "Document Identifier",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 27,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DocType",
+      "Description": "Document Type",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": [
+        [
+          "15",
+          "Delivery"
+        ],
+        [
+          "16",
+          "Returns"
+        ],
+        [
+          "203",
+          "A/R Down Payment"
+        ],
+        [
+          "13",
+          "A/R Invoice"
+        ],
+        [
+          "14",
+          "A/R Credit Memo"
+        ],
+        [
+          "132",
+          "Correction Invoice"
+        ],
+        [
+          "20",
+          "Goods Receipt PO"
+        ],
+        [
+          "21",
+          "Goods Returns"
+        ],
+        [
+          "204",
+          "A/P Down Payment"
+        ],
+        [
+          "18",
+          "A/P Invoice"
+        ],
+        [
+          "19",
+          "A/P Credit Memo"
+        ],
+        [
+          "24",
+          "Incoming Payment"
+        ],
+        [
+          "25",
+          "Deposit"
+        ],
+        [
+          "46",
+          "Payment Advice"
+        ],
+        [
+          "57",
+          "Checks for Payment"
+        ],
+        [
+          "76",
+          "Postdated Deposit"
+        ],
+        [
+          "-2",
+          "Opening Balance"
+        ],
+        [
+          "-3",
+          "Closing Balance"
+        ],
+        [
+          "30",
+          "Journal Entry"
+        ],
+        [
+          "58",
+          "Whse Reconciliation"
+        ],
+        [
+          "59",
+          "Goods Receipt"
+        ],
+        [
+          "60",
+          "Goods Issue"
+        ],
+        [
+          "67",
+          "Inventory Transfers"
+        ],
+        [
+          "-1",
+          "All transactions"
+        ]
+      ],
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "AmntLC",
+      "Description": "Applied Amount (LC)",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "AmntFC",
+      "Description": "Applied Amount (FC)",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "IsDebit",
+      "Description": "Debit [Yes/No]",
+      "Related": "",
+      "DefaultValue": "Y",
+      "ValidValues": [
+        [
+          "Y",
+          "Yes"
+        ],
+        [
+          "N",
+          "No"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "GLAct",
+      "Description": "G/L Account or BP Code",
+      "Related": "OACT",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 15,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "PrftCenter",
+      "Description": "Distribution Rule",
+      "Related": "OOCR",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Project",
+      "Description": "Project",
+      "Related": "OPRJ",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "VatCode",
+      "Description": "VAT Code",
+      "Related": "OVTG",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Selected",
+      "Description": "Selected",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": [
+        [
+          "Y",
+          "Yes"
+        ],
+        [
+          "N",
+          "No"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "VatLC",
+      "Description": "VAT or Discount Amount (LC)",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "VatFC",
+      "Description": "VAT or Discount Amount (FC)",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Installmnt",
+      "Description": "Installment",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "InterimAct",
+      "Description": "Interim Account",
+      "Related": "OACT",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 15,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "JdtLine",
+      "Description": "Journal Entry",
+      "Related": "OJDT",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DocNum",
+      "Description": "Document Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "PrftCent2",
+      "Description": "Distribution Rule2",
+      "Related": "OOCR",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "PrftCent3",
+      "Description": "Distribution Rule3",
+      "Related": "OOCR",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "PrftCent4",
+      "Description": "Distribution Rule4",
+      "Related": "OOCR",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "PrftCent5",
+      "Description": "Distribution Rule5",
+      "Related": "OOCR",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "MatchLog",
+      "Description": "Matching Criteria Log",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 254,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DueBal",
+      "Description": "Balance Due",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DueBalFC",
+      "Description": "Balance Due (FC)",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

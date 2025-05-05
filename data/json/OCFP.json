@@ -1,0 +1,136 @@
+{
+  "Category": "Administration",
+  "TableName": "OCFP",
+  "Description": "CFOP for Nota \n Fiscal",
+  "PrimaryKeys": [
+    "ID"
+  ],
+  "Fields": [
+    {
+      "Field": "ID",
+      "Description": "CFOP ID",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Code",
+      "Description": "CFOP Code",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 6,
+      "IsNullable": false,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Descrip",
+      "Description": "Description",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "ntext",
+      "SqlSize": 1073741823,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "App",
+      "Description": "Application",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "ntext",
+      "SqlSize": 1073741823,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Locked",
+      "Description": "Locked",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "Y",
+          "Yes"
+        ],
+        [
+          "N",
+          "No"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DataSource",
+      "Description": "Data Source",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "N",
+          "Unknown"
+        ],
+        [
+          "I",
+          "Interface"
+        ],
+        [
+          "U",
+          "Update"
+        ],
+        [
+          "M",
+          "Import"
+        ],
+        [
+          "O",
+          "OBServer"
+        ],
+        [
+          "A",
+          "Auto Incr."
+        ],
+        [
+          "D",
+          "Data Doc."
+        ],
+        [
+          "P",
+          "Partner Implementation"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "UserSign",
+      "Description": "User Signature",
+      "Related": "OUSR",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 6,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "Category": "Finance",
+  "TableName": "GBI5",
+  "Description": "GBI Row 5 - \n Projects",
+  "PrimaryKeys": [
+    "HistoryId",
+    "RowId"
+  ],
+  "Fields": [
+    {
+      "Field": "HistoryId",
+      "Description": "History Key",
+      "Related": "OGBI",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "RowId",
+      "Description": "Row Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "PrjCode",
+      "Description": "Project Code",
+      "Related": "OPRJ",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "PrjName",
+      "Description": "Project Name",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 100,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "Category": "Administration",
+  "TableName": "NNM3",
+  "Description": "Documents \n Numbering -Belgium Series",
+  "PrimaryKeys": [
+    "ObjectCode",
+    "Series",
+    "DocSubType"
+  ],
+  "Fields": [
+    {
+      "Field": "ObjectCode",
+      "Description": "Document",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Series",
+      "Description": "Series",
+      "Related": "",
+      "DefaultValue": "0",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DocSubType",
+      "Description": "VAT Code for Tax Invoice Rpt",
+      "Related": "",
+      "DefaultValue": "--",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 2,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    }
+  ]
+}

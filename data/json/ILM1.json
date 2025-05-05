@@ -1,0 +1,72 @@
+{
+  "Category": "Inventory_and_Production",
+  "TableName": "ILM1",
+  "Description": "Srl \n & Batch Det of Inv Log Msg",
+  "PrimaryKeys": [
+    "MessageID",
+    "ItemCode",
+    "SysNumber"
+  ],
+  "Fields": [
+    {
+      "Field": "MessageID",
+      "Description": "Message ID",
+      "Related": "OILM",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ItemCode",
+      "Description": "Item Code",
+      "Related": "OITM",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "SysNumber",
+      "Description": "System Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Quantity",
+      "Description": "Quantity",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "MdAbsEntry",
+      "Description": "MD Abs Entry",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

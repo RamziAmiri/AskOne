@@ -1,0 +1,157 @@
+{
+  "Category": "Administration",
+  "TableName": "SPRG",
+  "Description": "Application Start",
+  "PrimaryKeys": [
+    "LineNum",
+    "UserCode"
+  ],
+  "Fields": [
+    {
+      "Field": "LineNum",
+      "Description": "Row Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "UserCode",
+      "Description": "User Code",
+      "Related": "",
+      "DefaultValue": "-1",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Name",
+      "Description": "Application Name",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 128,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "FileName",
+      "Description": "File Name",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 254,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Path",
+      "Description": "Application Route",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "ntext",
+      "SqlSize": 1073741823,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Params",
+      "Description": "Application Parameters",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "ntext",
+      "SqlSize": 1073741823,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "OPRTION",
+      "Description": "Operation Method",
+      "Related": "",
+      "DefaultValue": "open",
+      "ValidValues": [
+        [
+          "open",
+          "Open"
+        ],
+        [
+          "edit",
+          "Edit"
+        ],
+        [
+          "explore",
+          "Find Folder"
+        ],
+        [
+          "find",
+          "Find File"
+        ],
+        [
+          "print",
+          "Print"
+        ],
+        [
+          "properties",
+          "Properties"
+        ]
+      ],
+      "SqlType": "nvarchar",
+      "SqlSize": 50,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "WIN_STYLE",
+      "Description": "Windows Type",
+      "Related": "",
+      "DefaultValue": "1",
+      "ValidValues": [
+        [
+          "0",
+          "Hide"
+        ],
+        [
+          "1",
+          "Standard"
+        ],
+        [
+          "3",
+          "Enlarge"
+        ],
+        [
+          "5",
+          "Operate as Previous"
+        ],
+        [
+          "6",
+          "Reduce"
+        ],
+        [
+          "9",
+          "Restore"
+        ]
+      ],
+      "SqlType": "nvarchar",
+      "SqlSize": 2,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

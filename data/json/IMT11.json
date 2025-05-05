@@ -1,0 +1,69 @@
+{
+  "Category": "Inventory_and_Production",
+  "TableName": "IMT11",
+  "Description": "Calculated \n expression's constituent with sign for specifying account in specific \n template",
+  "PrimaryKeys": [
+    "TemplateId",
+    "AccountId",
+    "PoSt_ID"
+  ],
+  "Fields": [
+    {
+      "Field": "TemplateId",
+      "Description": "Template ID",
+      "Related": "IMT1",
+      "DefaultValue": "-1",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "AccountId",
+      "Description": "Account ID",
+      "Related": "IMT1",
+      "DefaultValue": "-1",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Sign",
+      "Description": "Sing of the constituent",
+      "Related": "",
+      "DefaultValue": "A",
+      "ValidValues": [
+        [
+          "A",
+          "Add"
+        ],
+        [
+          "S",
+          "Sub"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "PoSt_ID",
+      "Description": "Id into Post Structure",
+      "Related": "",
+      "DefaultValue": "-1",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    }
+  ]
+}

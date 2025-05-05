@@ -1,0 +1,22 @@
+{
+  "Category": "Administration",
+  "TableName": "EOY1",
+  "Description": "End of Year UDOs",
+  "PrimaryKeys": [
+    "UdoCode"
+  ],
+  "Fields": [
+    {
+      "Field": "UdoCode",
+      "Description": "UDO Code",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    }
+  ]
+}

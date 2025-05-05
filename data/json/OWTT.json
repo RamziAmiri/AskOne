@@ -1,0 +1,34 @@
+{
+  "Category": "Finance",
+  "TableName": "OWTT",
+  "Description": "Withholding \n Tax Type",
+  "PrimaryKeys": [
+    "WTTypeId"
+  ],
+  "Fields": [
+    {
+      "Field": "WTTypeId",
+      "Description": "Internal Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "WTType",
+      "Description": "Type",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 10,
+      "IsNullable": false,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

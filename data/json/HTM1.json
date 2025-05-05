@@ -1,0 +1,68 @@
+{
+  "Category": "Human_Resources",
+  "TableName": "HTM1",
+  "Description": "Team Members",
+  "PrimaryKeys": [
+    "teamID",
+    "empID"
+  ],
+  "Fields": [
+    {
+      "Field": "teamID",
+      "Description": "Team ID",
+      "Related": "OHTM",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "line",
+      "Description": "Row",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "empID",
+      "Description": "Employee ID",
+      "Related": "OHEM",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "role",
+      "Description": "Role in Team",
+      "Related": "",
+      "DefaultValue": "M",
+      "ValidValues": [
+        [
+          "L",
+          "Leader"
+        ],
+        [
+          "M",
+          "Member"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

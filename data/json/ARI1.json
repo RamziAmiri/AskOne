@@ -1,0 +1,85 @@
+{
+  "Category": "Administration",
+  "TableName": "ARI1",
+  "Description": "Add-On",
+  "PrimaryKeys": [
+    "USER_CODE",
+    "AddOnID"
+  ],
+  "Fields": [
+    {
+      "Field": "USER_CODE",
+      "Description": "User Code",
+      "Related": "OUSR",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "AddOnID",
+      "Description": "Add-On ID",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "AddOnType",
+      "Description": "Add-On Type",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": [
+        [
+          "M",
+          "Manual"
+        ],
+        [
+          "C",
+          "Critical"
+        ],
+        [
+          "A",
+          "Automatic"
+        ],
+        [
+          "D",
+          "Disabled"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "EnableFlag",
+      "Description": "Add-On Enable Flag",
+      "Related": "",
+      "DefaultValue": "Y",
+      "ValidValues": [
+        [
+          "Y",
+          "Yes"
+        ],
+        [
+          "N",
+          "No"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

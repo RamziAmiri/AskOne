@@ -1,0 +1,218 @@
+{
+  "Category": "Reports",
+  "TableName": "EJB2",
+  "Description": "Docs \n List for ERV-JAb Wizard",
+  "PrimaryKeys": [
+    "WizardID",
+    "DocID"
+  ],
+  "Fields": [
+    {
+      "Field": "WizardID",
+      "Description": "Wizard ID",
+      "Related": "OEJB",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DocID",
+      "Description": "Document ID",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Selected",
+      "Description": "Selected",
+      "Related": "",
+      "DefaultValue": "Y",
+      "ValidValues": [
+        [
+          "Y",
+          "Yes"
+        ],
+        [
+          "N",
+          "No"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Mandatory",
+      "Description": "Mandatory",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "Y",
+          "Yes"
+        ],
+        [
+          "N",
+          "No"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Type",
+      "Description": "Type",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 3,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "RptSec",
+      "Description": "Report Section",
+      "Related": "",
+      "DefaultValue": "0",
+      "ValidValues": [
+        [
+          "0",
+          ""
+        ],
+        [
+          "1",
+          "General Information for ERV-JAb"
+        ],
+        [
+          "2",
+          "Names of Signatories:"
+        ],
+        [
+          "3",
+          "Legal Size Classification"
+        ],
+        [
+          "4",
+          "Extract from Balance Sheet (UGB Form 2)"
+        ],
+        [
+          "5",
+          "Balance Sheet"
+        ],
+        [
+          "6",
+          "P&L Statement"
+        ],
+        [
+          "7",
+          "Annex To Be Published (UGB Form 3)"
+        ],
+        [
+          "8",
+          "General and Other Explanations"
+        ],
+        [
+          "9",
+          "Annex to Balance Sheet Entry"
+        ],
+        [
+          "10",
+          "Annex to P&L Statement"
+        ],
+        [
+          "11",
+          "Annual Report"
+        ],
+        [
+          "12",
+          "Suggestion for Financial Statement Usage"
+        ],
+        [
+          "13",
+          "Decision About Financial Statement Usage"
+        ],
+        [
+          "14",
+          "Note of Confirmation"
+        ],
+        [
+          "15",
+          "Supervisory Board Report"
+        ],
+        [
+          "16",
+          "External Auditor Report Acc. to Art. 44 Para. 3 EStG (Income Tax Act)"
+        ],
+        [
+          "17",
+          "Finance-Specific Annex"
+        ],
+        [
+          "18",
+          "Assets History Sheet"
+        ],
+        [
+          "19",
+          "Liabilities History Sheet"
+        ]
+      ],
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "FilePath",
+      "Description": "File Path",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 254,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "FileStorag",
+      "Description": "File Storage",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "image",
+      "SqlSize": 2147483647,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "VisOrder",
+      "Description": "Visual Order",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

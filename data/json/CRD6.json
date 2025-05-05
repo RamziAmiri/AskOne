@@ -1,0 +1,35 @@
+{
+  "Category": "Business_Partners",
+  "TableName": "CRD6",
+  "Description": "BP's Payer Name",
+  "PrimaryKeys": [
+    "CardCode",
+    "CardPyName"
+  ],
+  "Fields": [
+    {
+      "Field": "CardCode",
+      "Description": "BP Code",
+      "Related": "OCRD",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 15,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CardPyName",
+      "Description": "Payer Name in Bank Statement",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 48,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    }
+  ]
+}

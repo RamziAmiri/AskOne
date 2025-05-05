@@ -1,0 +1,108 @@
+{
+  "Category": "Administration",
+  "TableName": "ORLD",
+  "Description": "Reference \n Links Definition",
+  "PrimaryKeys": [
+    "AbsEntry"
+  ],
+  "Fields": [
+    {
+      "Field": "AbsEntry",
+      "Description": "Internal Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ObjectCode",
+      "Description": "Document",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": false,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DocSubType",
+      "Description": "Document Subtype",
+      "Related": "",
+      "DefaultValue": "--",
+      "ValidValues": [
+        [
+          "--",
+          ""
+        ],
+        [
+          "IE",
+          "Invoice Exempt"
+        ],
+        [
+          "DN",
+          "Debit Memo"
+        ],
+        [
+          "IB",
+          "Bill"
+        ],
+        [
+          "EB",
+          "Exempt Bill"
+        ],
+        [
+          "RI",
+          "Reserve Invoice"
+        ],
+        [
+          "IR",
+          "Invoice & Receipt"
+        ],
+        [
+          "DM",
+          "A/P Debit Memo"
+        ],
+        [
+          "IX",
+          "Export Invoice"
+        ],
+        [
+          "RP",
+          "A/P Reserve Invoice"
+        ]
+      ],
+      "SqlType": "nvarchar",
+      "SqlSize": 2,
+      "IsNullable": false,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Status",
+      "Description": "Status",
+      "Related": "",
+      "DefaultValue": "O",
+      "ValidValues": [
+        [
+          "O",
+          "Original"
+        ],
+        [
+          "C",
+          "Customized"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

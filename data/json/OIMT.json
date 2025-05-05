@@ -1,0 +1,183 @@
+{
+  "Category": "Inventory_and_Production",
+  "TableName": "OIMT",
+  "Description": "Templates \n for Inventory JE",
+  "PrimaryKeys": [
+    "TemplateId"
+  ],
+  "Fields": [
+    {
+      "Field": "ValuatType",
+      "Description": "Document Valuation Type",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "A",
+          ""
+        ],
+        [
+          "F",
+          ""
+        ],
+        [
+          "S",
+          ""
+        ],
+        [
+          "N",
+          "unDefined"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": false,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "TransType",
+      "Description": "Transaction type",
+      "Related": "",
+      "DefaultValue": "-1",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "BaseType",
+      "Description": "Base Transaction Type",
+      "Related": "",
+      "DefaultValue": "-1",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "TemplateId",
+      "Description": "Template ID",
+      "Related": "",
+      "DefaultValue": "-1",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "LocalizId",
+      "Description": "Localization Identifier",
+      "Related": "",
+      "DefaultValue": "XX",
+      "ValidValues": [
+        [
+          "XX",
+          "All Localizations"
+        ]
+      ],
+      "SqlType": "nvarchar",
+      "SqlSize": 2,
+      "IsNullable": false,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Action",
+      "Description": "Action Type",
+      "Related": "",
+      "DefaultValue": "0",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "JEPosting",
+      "Description": "Posting Status",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "N",
+          "None"
+        ],
+        [
+          "C",
+          "Complete"
+        ],
+        [
+          "P",
+          "Partial"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "LineActTyp",
+      "Description": "Line Account Type",
+      "Related": "",
+      "DefaultValue": "2",
+      "ValidValues": [
+        [
+          "2",
+          "LINE_ACCT_TYPE"
+        ]
+      ],
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "TmpType",
+      "Description": "Template Type",
+      "Related": "",
+      "DefaultValue": "0",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Total",
+      "Description": "Total Type",
+      "Related": "",
+      "DefaultValue": "M",
+      "ValidValues": [
+        [
+          "M",
+          "Total from Message"
+        ],
+        [
+          "C",
+          "Total from Calculator"
+        ],
+        [
+          "F",
+          "Total from Formula"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

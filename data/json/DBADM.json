@@ -1,0 +1,34 @@
+{
+  "Category": "Administration",
+  "TableName": "DBADM",
+  "Description": "Read-Only DB User",
+  "PrimaryKeys": [
+    "ROUser"
+  ],
+  "Fields": [
+    {
+      "Field": "ROUser",
+      "Description": "Read-Only User",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 254,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ROPass",
+      "Description": "Read-Only Password",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 254,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

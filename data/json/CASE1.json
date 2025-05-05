@@ -1,0 +1,601 @@
+{
+  "Category": "Finance",
+  "TableName": "CASE1",
+  "Description": "Internal \n Recon. Upgrade 2007A",
+  "PrimaryKeys": [
+    "AbsEntry",
+    "LineId"
+  ],
+  "Fields": [
+    {
+      "Field": "AbsEntry",
+      "Description": "Header Internal ID",
+      "Related": "CASE",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "LineId",
+      "Description": "Inconsistent Amt Number",
+      "Related": "",
+      "DefaultValue": "0",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ShortName",
+      "Description": "BP Code",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 15,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Account",
+      "Description": "Account Code",
+      "Related": "OACT",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 15,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "OrigAbsEnt",
+      "Description": "Original Doc. Internal ID",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "OrigObjTyp",
+      "Description": "Original Doc. Type",
+      "Related": "",
+      "DefaultValue": "0",
+      "ValidValues": [
+        [
+          "0",
+          "All"
+        ],
+        [
+          "13",
+          "A/R Invoice"
+        ],
+        [
+          "14",
+          "A/R Credit Memo"
+        ],
+        [
+          "18",
+          "A/P Invoice"
+        ],
+        [
+          "19",
+          "A/P Credit Memo"
+        ],
+        [
+          "24",
+          "Incoming Payment"
+        ],
+        [
+          "30",
+          "Journal Entry"
+        ],
+        [
+          "46",
+          "Outgoing Payment"
+        ],
+        [
+          "163",
+          "A/P Correction Invoice"
+        ],
+        [
+          "165",
+          "A/R Correction Invoice"
+        ],
+        [
+          "203",
+          "A/R Down Payment"
+        ],
+        [
+          "204",
+          "A/P Down Payment"
+        ]
+      ],
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "OrigDocNum",
+      "Description": "Original Document Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "OrigInsNum",
+      "Description": "Original Installment Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "OrigTrnsId",
+      "Description": "Original JE Trans. No.",
+      "Related": "OJDT",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "OrigTrnsLn",
+      "Description": "Original JE Row No.",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "LnkRecnAbs",
+      "Description": "Linked Recon. Doc. Internal ID",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "LnkRecnObj",
+      "Description": "Destination Object Type",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "LnkRecnNum",
+      "Description": "Destination Document Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "LnkRecnIns",
+      "Description": "Destination Installment Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "LnkRecnTrn",
+      "Description": "Linked and Recon. JE Trans No.",
+      "Related": "OJDT",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "LnkRecnLn",
+      "Description": "Linked and Recon. JE Row No.",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "InconsType",
+      "Description": "Type of Inconsistency",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": [
+        [
+          "1",
+          "Invoice Linked to Reconciled Payment"
+        ],
+        [
+          "2",
+          "Credit Memo Linked to Reconciled Payment"
+        ],
+        [
+          "3",
+          "Canceled Reconciliation"
+        ],
+        [
+          "4",
+          "Partial Exchange Rate Difference Recognition"
+        ],
+        [
+          "5",
+          "Payment Linked to Reconciled Transaction"
+        ],
+        [
+          "6",
+          "Journal Entry Linked to Reconciled Payment"
+        ],
+        [
+          "7",
+          "Unbalanced Reconciliation"
+        ],
+        [
+          "8",
+          "Invoice/Credit Linked to Credit/Invoice"
+        ],
+        [
+          "9",
+          "Balancing Upgrade Journal Transaction"
+        ],
+        [
+          "10",
+          "Canceled Payment or Journal Entry"
+        ],
+        [
+          "11",
+          "Cancellation of Payment/JE within Payment"
+        ],
+        [
+          "12",
+          "Unreconciled Balance Rows in Multiple BPs Reconciliation"
+        ],
+        [
+          "13",
+          "Missing Exchange Rate Difference behind Multiple BPs Reconciliation"
+        ],
+        [
+          "14",
+          "Double Application of Payments of Down Payment Request"
+        ],
+        [
+          "15",
+          "Exchange Difference Recognition of Payments of DPM Requests"
+        ],
+        [
+          "16",
+          "Reconciliation of Payments Associated with DPM Request"
+        ],
+        [
+          "17",
+          "Unbalanced Multiple BP Reconciliation"
+        ],
+        [
+          "18",
+          "Amount Differences"
+        ],
+        [
+          "19",
+          "Double application of invoice after linking of down payment"
+        ],
+        [
+          "20",
+          "Canceled payment of down payment request"
+        ],
+        [
+          "21",
+          "Credit Memo based on a Year Transfered invoice"
+        ],
+        [
+          "22",
+          "Payment of a year transfer document"
+        ],
+        [
+          "23",
+          "Processing of Payment Linked to Transactions"
+        ],
+        [
+          "24",
+          "Consolidating Business Partner"
+        ],
+        [
+          "25",
+          "Multiple Control Accounts"
+        ],
+        [
+          "26",
+          "Different Control Accounts in a Canceled Payment"
+        ],
+        [
+          "0",
+          "None"
+        ]
+      ],
+      "SqlType": "nvarchar",
+      "SqlSize": 2,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ReconNum",
+      "Description": "Reconciliation Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "NewRcnNum",
+      "Description": "New Reconciliation No.",
+      "Related": "OITR",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CredDeb",
+      "Description": "Credit or Debit",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Amount",
+      "Description": "Inconsistent Amount",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "AmountFC",
+      "Description": "Inconsistent Amount (FC)",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "AmountSC",
+      "Description": "Inconsistent Amount (SC)",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "TransId",
+      "Description": "Balancing Trans. Internal ID",
+      "Related": "OJDT",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "TransLine",
+      "Description": "Balancing Transaction Row No.",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "X",
+      "Description": "x",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Y",
+      "Description": "Y",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Z",
+      "Description": "Z",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "LnkObjAbsE",
+      "Description": "Linked Doc. Internal ID",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "LinkObjTyp",
+      "Description": "Linked Document Type",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "LinkDocNum",
+      "Description": "Linked Document Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "LinkInsNum",
+      "Description": "Linked Doc. Installment Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "LinkTrnsId",
+      "Description": "Linked Doc. JE Trans. No.",
+      "Related": "OJDT",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "LinkTrnsLn",
+      "Description": "Linked Doc. JE Row No.",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "TrnsTtlAmt",
+      "Description": "Balancing Trans. Total Amount",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "TrnsTtlFc",
+      "Description": "Balancing Trans. Total Amt FC",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

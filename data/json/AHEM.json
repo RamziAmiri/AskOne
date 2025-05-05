@@ -1,0 +1,1818 @@
+{
+  "Category": "Human_Resources",
+  "TableName": "AHEM",
+  "Description": "Employees",
+  "PrimaryKeys": [
+    "empID",
+    "LogInstanc"
+  ],
+  "Fields": [
+    {
+      "Field": "empID",
+      "Description": "Employee No.",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "lastName",
+      "Description": "Last Name",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 50,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "firstName",
+      "Description": "First Name",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 50,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "middleName",
+      "Description": "Middle Name",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 50,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "sex",
+      "Description": "Gender",
+      "Related": "",
+      "DefaultValue": "M",
+      "ValidValues": [
+        [
+          "F",
+          "Female"
+        ],
+        [
+          "M",
+          "Male"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "jobTitle",
+      "Description": "Job Title",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "type",
+      "Description": "Employee Type",
+      "Related": "OHTY",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "dept",
+      "Description": "Department",
+      "Related": "OUDP",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "branch",
+      "Description": "Branch",
+      "Related": "OUBR",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "workStreet",
+      "Description": "Work Street",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 100,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "workBlock",
+      "Description": "Work Block",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 100,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "workZip",
+      "Description": "Work Zip Code",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "workCity",
+      "Description": "Work City",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 100,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "workCounty",
+      "Description": "Work County",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 100,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "workCountr",
+      "Description": "Work Country",
+      "Related": "OCRY",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 3,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "workState",
+      "Description": "Work State",
+      "Related": "OCST",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 3,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "manager",
+      "Description": "Manager",
+      "Related": "OHEM",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "userId",
+      "Description": "User ID",
+      "Related": "OUSR",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "salesPrson",
+      "Description": "Sales Employee",
+      "Related": "OSLP",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "officeTel",
+      "Description": "Office Phone",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "officeExt",
+      "Description": "Office Ext.",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "mobile",
+      "Description": "Mobile Phone",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "pager",
+      "Description": "Pager",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "homeTel",
+      "Description": "Home Phone",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "fax",
+      "Description": "Fax",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "email",
+      "Description": "E-Mail",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 100,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "startDate",
+      "Description": "Start Date",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "datetime",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "status",
+      "Description": "Status",
+      "Related": "OHST",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "salary",
+      "Description": "Salary",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "salaryUnit",
+      "Description": "Salary Unit",
+      "Related": "",
+      "DefaultValue": "M",
+      "ValidValues": [
+        [
+          "H",
+          "Hour"
+        ],
+        [
+          "D",
+          "Day"
+        ],
+        [
+          "W",
+          "Week"
+        ],
+        [
+          "M",
+          "Month"
+        ],
+        [
+          "Y",
+          "Year"
+        ],
+        [
+          "S",
+          "Semimonthly"
+        ],
+        [
+          "B",
+          "Biweekly"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "emplCost",
+      "Description": "Employee Costs",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "empCostUnt",
+      "Description": "Employee Cost Unit",
+      "Related": "",
+      "DefaultValue": "M",
+      "ValidValues": [
+        [
+          "H",
+          "Hour"
+        ],
+        [
+          "D",
+          "Day"
+        ],
+        [
+          "W",
+          "Week"
+        ],
+        [
+          "M",
+          "Month"
+        ],
+        [
+          "Y",
+          "Year"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "termDate",
+      "Description": "Termination Date",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "datetime",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "termReason",
+      "Description": "Termination Reason",
+      "Related": "OHTR",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "bankCode",
+      "Description": "Bank Code",
+      "Related": "ODSC",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 30,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "bankBranch",
+      "Description": "Bank Branch",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 100,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "bankBranNo",
+      "Description": "Bank Branch No.",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 30,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "bankAcount",
+      "Description": "Bank Account",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 100,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "homeStreet",
+      "Description": "Home Street",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 100,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "homeBlock",
+      "Description": "Home Block",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 100,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "homeZip",
+      "Description": "Home Zip Code",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "homeCity",
+      "Description": "Home City",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 100,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "homeCounty",
+      "Description": "Home County",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 100,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "homeCountr",
+      "Description": "Home Country",
+      "Related": "OCRY",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 3,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "homeState",
+      "Description": "Home State",
+      "Related": "OCST",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 3,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "birthDate",
+      "Description": "Date of Birth",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "datetime",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "brthCountr",
+      "Description": "Country of Birth",
+      "Related": "OCRY",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 3,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "martStatus",
+      "Description": "Marital Status",
+      "Related": "",
+      "DefaultValue": "S",
+      "ValidValues": [
+        [
+          "S",
+          "Single"
+        ],
+        [
+          "M",
+          "Married"
+        ],
+        [
+          "D",
+          "Divorced"
+        ],
+        [
+          "W",
+          "Widowed"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "nChildren",
+      "Description": "No. of Children",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "govID",
+      "Description": "ID Issued by Authorities",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 64,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "citizenshp",
+      "Description": "Citizenship",
+      "Related": "OCRY",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 3,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "passportNo",
+      "Description": "Passport No.",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 64,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "passportEx",
+      "Description": "Passport Expiration Date",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "datetime",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "picture",
+      "Description": "Picture",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 200,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "remark",
+      "Description": "Remarks",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "ntext",
+      "SqlSize": 1073741823,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "attachment",
+      "Description": "Attachments",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "ntext",
+      "SqlSize": 1073741823,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "salaryCurr",
+      "Description": "Salary Currency",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 3,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "empCostCur",
+      "Description": "Employee Costs Currency",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 3,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "WorkBuild",
+      "Description": "Work Building/Floor/Room",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "ntext",
+      "SqlSize": 1073741823,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "HomeBuild",
+      "Description": "Home Building/Floor/Room",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "ntext",
+      "SqlSize": 1073741823,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "position",
+      "Description": "Position",
+      "Related": "OHPS",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "AtcEntry",
+      "Description": "Attachment Entry",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "AddrTypeW",
+      "Description": "Work Address Type",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 100,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "AddrTypeH",
+      "Description": "Home Address Type",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 100,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "StreetNoW",
+      "Description": "Work Street No.",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 100,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "StreetNoH",
+      "Description": "Home Street No.",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 100,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DispMidNam",
+      "Description": "Display Middle Name",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "N",
+          "No"
+        ],
+        [
+          "Y",
+          "Yes"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "NamePos",
+      "Description": "Name Positioning Set",
+      "Related": "",
+      "DefaultValue": "1",
+      "ValidValues": [
+        [
+          "1",
+          "Last Name, First Name"
+        ],
+        [
+          "2",
+          "First Name, Last Name"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DispComma",
+      "Description": "Display Comma",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "N",
+          "No"
+        ],
+        [
+          "Y",
+          "Yes"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CostCenter",
+      "Description": "Cost Center",
+      "Related": "OPRC",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CompanyNum",
+      "Description": "Company Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "VacPreYear",
+      "Description": "Vacation: Previous Year",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "VacCurYear",
+      "Description": "Vacation: Current Year",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "MunKey",
+      "Description": "Municipality Key",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "TaxClass",
+      "Description": "Tax Class",
+      "Related": "",
+      "DefaultValue": "0",
+      "ValidValues": [
+        [
+          "0",
+          ""
+        ],
+        [
+          "1",
+          "Tax Class I"
+        ],
+        [
+          "2",
+          "Tax Class II"
+        ],
+        [
+          "3",
+          "Tax Class III"
+        ],
+        [
+          "4",
+          "Tax Class IV"
+        ],
+        [
+          "5",
+          "Tax Class V"
+        ],
+        [
+          "6",
+          "Tax Class VI"
+        ]
+      ],
+      "SqlType": "nvarchar",
+      "SqlSize": 2,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "InTaxLiabi",
+      "Description": "Income Tax Liability",
+      "Related": "",
+      "DefaultValue": "0",
+      "ValidValues": [
+        [
+          "0",
+          ""
+        ],
+        [
+          "1",
+          "On Tax Card"
+        ],
+        [
+          "2",
+          "Flat-Rate Tax"
+        ],
+        [
+          "3",
+          "Cross-Border Employee"
+        ],
+        [
+          "4",
+          "Not Liable"
+        ]
+      ],
+      "SqlType": "nvarchar",
+      "SqlSize": 2,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "EmTaxCCode",
+      "Description": "Religion",
+      "Related": "",
+      "DefaultValue": "0",
+      "ValidValues": [
+        [
+          "0",
+          ""
+        ],
+        [
+          "--",
+          "No Church Tax Liability"
+        ],
+        [
+          "AK",
+          "(AK) Old Catholic"
+        ],
+        [
+          "EV",
+          "(EV) Protestant"
+        ],
+        [
+          "FA",
+          "(FA) Non-Denomination Alzey"
+        ],
+        [
+          "FB",
+          "(FB) Non-Denominational Regional Congregation Baden"
+        ],
+        [
+          "FG",
+          "(FG) Non-Denominational Regional Congregation Palatinate"
+        ],
+        [
+          "FM",
+          "(FM) Non-Denominational Congregation Mainz"
+        ],
+        [
+          "FR",
+          "(FR) French-Reformed"
+        ],
+        [
+          "FS",
+          "(FS) Non-Denominational Congregation Offenbach/Mainz"
+        ],
+        [
+          "IB",
+          "(IB) Israelite Religious Community Baden"
+        ],
+        [
+          "IL",
+          "(IL) Israelite Rural"
+        ],
+        [
+          "IS",
+          "(IS) Israelite"
+        ],
+        [
+          "IW",
+          "(IW) Israelite Religious Community Wuerttemberg"
+        ],
+        [
+          "JD",
+          "(JD) Jewish Religion Tax"
+        ],
+        [
+          "JH",
+          "(JH) Jewish Religion Tax"
+        ],
+        [
+          "JS",
+          "(JS) Jewish Religion Tax"
+        ],
+        [
+          "LT",
+          "(LT) Lutheran"
+        ],
+        [
+          "RF",
+          "(RF) Reformed"
+        ],
+        [
+          "RK",
+          "(RK) Roman Catholic"
+        ]
+      ],
+      "SqlType": "nvarchar",
+      "SqlSize": 9,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "RelPartner",
+      "Description": "Religion of Partner",
+      "Related": "",
+      "DefaultValue": "0",
+      "ValidValues": [
+        [
+          "0",
+          ""
+        ],
+        [
+          "--",
+          "No Church Tax Liability"
+        ],
+        [
+          "AK",
+          "(AK) Old Catholic"
+        ],
+        [
+          "EV",
+          "(EV) Protestant"
+        ],
+        [
+          "FA",
+          "(FA) Non-Denomination Alzey"
+        ],
+        [
+          "FB",
+          "(FB) Non-Denominational Regional Congregation Baden"
+        ],
+        [
+          "FG",
+          "(FG) Non-Denominational Regional Congregation Palatinate"
+        ],
+        [
+          "FM",
+          "(FM) Non-Denominational Congregation Mainz"
+        ],
+        [
+          "FR",
+          "(FR) French-Reformed"
+        ],
+        [
+          "FS",
+          "(FS) Non-Denominational Congregation Offenbach/Mainz"
+        ],
+        [
+          "IB",
+          "(IB) Israelite Religious Community Baden"
+        ],
+        [
+          "IL",
+          "(IL) Israelite Rural"
+        ],
+        [
+          "IS",
+          "(IS) Israelite"
+        ],
+        [
+          "IW",
+          "(IW) Israelite Religious Community Wuerttemberg"
+        ],
+        [
+          "JD",
+          "(JD) Jewish Religion Tax"
+        ],
+        [
+          "JH",
+          "(JH) Jewish Religion Tax"
+        ],
+        [
+          "JS",
+          "(JS) Jewish Religion Tax"
+        ],
+        [
+          "LT",
+          "(LT) Lutheran"
+        ],
+        [
+          "RF",
+          "(RF) Reformed"
+        ],
+        [
+          "RK",
+          "(RK) Roman Catholic"
+        ]
+      ],
+      "SqlType": "nvarchar",
+      "SqlSize": 9,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ExemptAmnt",
+      "Description": "Exemption Amount",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ExemptUnit",
+      "Description": "Exemption Amount Period",
+      "Related": "",
+      "DefaultValue": "0",
+      "ValidValues": [
+        [
+          "0",
+          ""
+        ],
+        [
+          "1",
+          "Yearly"
+        ],
+        [
+          "2",
+          "Monthly"
+        ],
+        [
+          "3",
+          "Weekly"
+        ],
+        [
+          "4",
+          "Daily"
+        ]
+      ],
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "AddiAmnt",
+      "Description": "Additional Amount",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "AddiUnit",
+      "Description": "Additional Amount Period",
+      "Related": "",
+      "DefaultValue": "0",
+      "ValidValues": [
+        [
+          "0",
+          ""
+        ],
+        [
+          "1",
+          "Yearly"
+        ],
+        [
+          "2",
+          "Monthly"
+        ],
+        [
+          "3",
+          "Weekly"
+        ],
+        [
+          "4",
+          "Daily"
+        ]
+      ],
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "TaxOName",
+      "Description": "Tax Office Name",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 50,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "TaxONum",
+      "Description": "Tax Office Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "HeaInsName",
+      "Description": "Health Insurance Company Name",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 50,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "HeaInsCode",
+      "Description": "Health Insurance Code",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 50,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "HeaInsType",
+      "Description": "Type of Health Insurance",
+      "Related": "",
+      "DefaultValue": "' '",
+      "ValidValues": [
+        [
+          "' '",
+          ""
+        ],
+        [
+          "AOK",
+          "(AOK)"
+        ],
+        [
+          "IKK",
+          "(IKK)"
+        ],
+        [
+          "EKK",
+          "(EKK)"
+        ],
+        [
+          "BKK",
+          "(BKK)"
+        ],
+        [
+          "BKS",
+          "(BKS)"
+        ],
+        [
+          "LKK",
+          "(LKK)"
+        ]
+      ],
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "SInsurNum",
+      "Description": "Social Insurance Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "StatusOfP",
+      "Description": "Professional Status",
+      "Related": "",
+      "DefaultValue": "-1",
+      "ValidValues": [
+        [
+          "-1",
+          ""
+        ],
+        [
+          "0",
+          "Trainee"
+        ],
+        [
+          "1",
+          "Worker"
+        ],
+        [
+          "2",
+          "Skilled Worker"
+        ],
+        [
+          "3",
+          "Supervisor/Foreman"
+        ],
+        [
+          "4",
+          "Office Worker"
+        ],
+        [
+          "5",
+          "Youth Help/Sheltered Workshop"
+        ],
+        [
+          "6",
+          "On Career Advancement Training"
+        ],
+        [
+          "7",
+          "Homeworker"
+        ],
+        [
+          "8",
+          "Part Time < 18 Hrs"
+        ],
+        [
+          "9",
+          "Part Time > 18 Hrs"
+        ]
+      ],
+      "SqlType": "nvarchar",
+      "SqlSize": 2,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "StatusOfE",
+      "Description": "Educational Status",
+      "Related": "",
+      "DefaultValue": "0",
+      "ValidValues": [
+        [
+          "0",
+          ""
+        ],
+        [
+          "1",
+          "W/o Professional Qualification"
+        ],
+        [
+          "2",
+          "W. Professional Qualification"
+        ],
+        [
+          "3",
+          "High School w/o Prof. Qualif."
+        ],
+        [
+          "4",
+          "High School w. Prof. Qualific."
+        ],
+        [
+          "5",
+          "Vocational Qualification"
+        ],
+        [
+          "6",
+          "University"
+        ],
+        [
+          "7",
+          "Not Possible to Specify"
+        ]
+      ],
+      "SqlType": "nvarchar",
+      "SqlSize": 2,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "BCodeDateV",
+      "Description": "Bank Code for DATEV",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DevBAOwner",
+      "Description": "Deviating Bank Account Owner",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "Y",
+          "Yes"
+        ],
+        [
+          "N",
+          "No"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "FNameSP",
+      "Description": "First Name of Spouse",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 50,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "SurnameSP",
+      "Description": "Last Name of Spouse",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 50,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "LogInstanc",
+      "Description": "Log Instance",
+      "Related": "",
+      "DefaultValue": "0",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "UserSign",
+      "Description": "User Signature",
+      "Related": "OUSR",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "UserSign2",
+      "Description": "Updating User",
+      "Related": "OUSR",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "UpdateDate",
+      "Description": "Update Date",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "datetime",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "PersGroup",
+      "Description": "Person Group",
+      "Related": "",
+      "DefaultValue": "-1",
+      "ValidValues": [
+        [
+          "-1",
+          ""
+        ],
+        [
+          "101",
+          "Subject to Social Insurance"
+        ],
+        [
+          "102",
+          "Apprentice"
+        ],
+        [
+          "104",
+          "Home Worker"
+        ],
+        [
+          "105",
+          "Trainee"
+        ],
+        [
+          "106",
+          "Student"
+        ],
+        [
+          "108",
+          "Early Retirement"
+        ],
+        [
+          "109",
+          "Part-Time Employee"
+        ],
+        [
+          "110",
+          "Short-Term Employee"
+        ],
+        [
+          "112",
+          "Family Member: Agriculture"
+        ],
+        [
+          "113",
+          "Addnl Income: Agriculture"
+        ],
+        [
+          "114",
+          "Addnl Income: Seasonal Agriculture"
+        ],
+        [
+          "116",
+          "Receiving Compensation Pay"
+        ],
+        [
+          "118",
+          "Irregularly Employed"
+        ],
+        [
+          "119",
+          "Pensioner"
+        ],
+        [
+          "997",
+          "Not Specified"
+        ]
+      ],
+      "SqlType": "nvarchar",
+      "SqlSize": 5,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "JTCode",
+      "Description": "Job Title Code",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 5,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ExtEmpNo",
+      "Description": "Ext. Employee No.",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "BirthPlace",
+      "Description": "Place of Birth",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 100,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "PymMeth",
+      "Description": "Payment Method",
+      "Related": "",
+      "DefaultValue": "05",
+      "ValidValues": [
+        [
+          "-1",
+          ""
+        ],
+        [
+          "05",
+          "Bank Transfer"
+        ]
+      ],
+      "SqlType": "nvarchar",
+      "SqlSize": 2,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ExemptCurr",
+      "Description": "Exemption Amount Currency",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 3,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "AddiCurr",
+      "Description": "Additional Amount Currency",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 3,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "Category": "Service",
+  "TableName": "CTR2",
+  "Description": "Service \n Contract - Recurring Transactions",
+  "PrimaryKeys": [
+    "ContractID",
+    "RcpEntry"
+  ],
+  "Fields": [
+    {
+      "Field": "ContractID",
+      "Description": "Contract No.",
+      "Related": "OCTR",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "RcpEntry",
+      "Description": "Recurring Template Entry",
+      "Related": "ORCP",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    }
+  ]
+}

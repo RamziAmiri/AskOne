@@ -1,0 +1,897 @@
+{
+  "Category": "Administration",
+  "TableName": "OTCX",
+  "Description": "Tax Code \n Determination",
+  "PrimaryKeys": [
+    "DocEntry"
+  ],
+  "Fields": [
+    {
+      "Field": "DocEntry",
+      "Description": "Internal Document ID",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "LineNum",
+      "Description": "Row Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DocType",
+      "Description": "Document Type",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": [
+        [
+          "0",
+          "Item"
+        ],
+        [
+          "1",
+          "Service"
+        ],
+        [
+          "2",
+          "Item & Service"
+        ]
+      ],
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "BusArea",
+      "Description": "Business Area",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": [
+        [
+          "0",
+          "Sales"
+        ],
+        [
+          "1",
+          "Purchase"
+        ],
+        [
+          "2",
+          "Sales & Purchase"
+        ]
+      ],
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Cond1",
+      "Description": "Condition 1",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": [
+        [
+          "0",
+          ""
+        ],
+        [
+          "1",
+          "Federal Tax ID"
+        ],
+        [
+          "2",
+          "Ship-To Address"
+        ],
+        [
+          "3",
+          "Ship-To Street / PO Box"
+        ],
+        [
+          "4",
+          "Ship-To City"
+        ],
+        [
+          "5",
+          "Ship-To ZIP Code"
+        ],
+        [
+          "6",
+          "Ship-To County"
+        ],
+        [
+          "7",
+          "Ship-To State"
+        ],
+        [
+          "8",
+          "Ship-To Country"
+        ],
+        [
+          "9",
+          "Item"
+        ],
+        [
+          "10",
+          "Item Group"
+        ],
+        [
+          "11",
+          "Business Partner"
+        ],
+        [
+          "12",
+          "Customer Group"
+        ],
+        [
+          "13",
+          "Vendor Group"
+        ],
+        [
+          "14",
+          "Warehouse"
+        ],
+        [
+          "15",
+          "G/L Account"
+        ],
+        [
+          "16",
+          "Customer Equalization tax"
+        ],
+        [
+          "17",
+          "Tax Status"
+        ],
+        [
+          "18",
+          "Freight"
+        ],
+        [
+          "19",
+          "UDF"
+        ]
+      ],
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "UDFTable1",
+      "Description": "UDF Table Name",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "NumVal1",
+      "Description": "Numeric Value",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "StrVal1",
+      "Description": "String Value",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 64,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "MnyVal1",
+      "Description": "Monetary Value",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Cond2",
+      "Description": "Condition 2",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": [
+        [
+          "0",
+          ""
+        ],
+        [
+          "1",
+          "Federal Tax ID"
+        ],
+        [
+          "2",
+          "Ship-To Address"
+        ],
+        [
+          "3",
+          "Ship-To Street / PO Box"
+        ],
+        [
+          "4",
+          "Ship-To City"
+        ],
+        [
+          "5",
+          "Ship-To ZIP Code"
+        ],
+        [
+          "6",
+          "Ship-To County"
+        ],
+        [
+          "7",
+          "Ship-To State"
+        ],
+        [
+          "8",
+          "Ship-To Country"
+        ],
+        [
+          "9",
+          "Item"
+        ],
+        [
+          "10",
+          "Item Group"
+        ],
+        [
+          "11",
+          "Business Partner"
+        ],
+        [
+          "12",
+          "Customer Group"
+        ],
+        [
+          "13",
+          "Vendor Group"
+        ],
+        [
+          "14",
+          "Warehouse"
+        ],
+        [
+          "15",
+          "G/L Account"
+        ],
+        [
+          "16",
+          "Customer Equalization tax"
+        ],
+        [
+          "17",
+          "Tax Status"
+        ],
+        [
+          "18",
+          "Freight"
+        ],
+        [
+          "19",
+          "UDF"
+        ]
+      ],
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "UDFTable2",
+      "Description": "UDF Table Name",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "NumVal2",
+      "Description": "Numeric Value",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "StrVal2",
+      "Description": "String Value",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 64,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "MnyVal2",
+      "Description": "Monetary Value",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Cond3",
+      "Description": "Condition 3",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": [
+        [
+          "0",
+          ""
+        ],
+        [
+          "1",
+          "Federal Tax ID"
+        ],
+        [
+          "2",
+          "Ship-To Address"
+        ],
+        [
+          "3",
+          "Ship-To Street / PO Box"
+        ],
+        [
+          "4",
+          "Ship-To City"
+        ],
+        [
+          "5",
+          "Ship-To ZIP Code"
+        ],
+        [
+          "6",
+          "Ship-To County"
+        ],
+        [
+          "7",
+          "Ship-To State"
+        ],
+        [
+          "8",
+          "Ship-To Country"
+        ],
+        [
+          "9",
+          "Item"
+        ],
+        [
+          "10",
+          "Item Group"
+        ],
+        [
+          "11",
+          "Business Partner"
+        ],
+        [
+          "12",
+          "Customer Group"
+        ],
+        [
+          "13",
+          "Vendor Group"
+        ],
+        [
+          "14",
+          "Warehouse"
+        ],
+        [
+          "15",
+          "G/L Account"
+        ],
+        [
+          "16",
+          "Customer Equalization tax"
+        ],
+        [
+          "17",
+          "Tax Status"
+        ],
+        [
+          "18",
+          "Freight"
+        ],
+        [
+          "19",
+          "UDF"
+        ]
+      ],
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "UdfTable3",
+      "Description": "UDF Table Name",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "NumVal3",
+      "Description": "Numeric Value",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "StrVal3",
+      "Description": "String Value",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 64,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "MnyVal3",
+      "Description": "Monetary Value",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Cond4",
+      "Description": "Condition 4",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": [
+        [
+          "0",
+          ""
+        ],
+        [
+          "1",
+          "Federal Tax ID"
+        ],
+        [
+          "2",
+          "Ship-To Address"
+        ],
+        [
+          "3",
+          "Ship-To Street / PO Box"
+        ],
+        [
+          "4",
+          "Ship-To City"
+        ],
+        [
+          "5",
+          "Ship-To ZIP Code"
+        ],
+        [
+          "6",
+          "Ship-To County"
+        ],
+        [
+          "7",
+          "Ship-To State"
+        ],
+        [
+          "8",
+          "Ship-To Country"
+        ],
+        [
+          "9",
+          "Item"
+        ],
+        [
+          "10",
+          "Item Group"
+        ],
+        [
+          "11",
+          "Business Partner"
+        ],
+        [
+          "12",
+          "Customer Group"
+        ],
+        [
+          "13",
+          "Vendor Group"
+        ],
+        [
+          "14",
+          "Warehouse"
+        ],
+        [
+          "15",
+          "G/L Account"
+        ],
+        [
+          "16",
+          "Customer Equalization tax"
+        ],
+        [
+          "17",
+          "Tax Status"
+        ],
+        [
+          "18",
+          "Freight"
+        ],
+        [
+          "19",
+          "UDF"
+        ]
+      ],
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "UdfTable4",
+      "Description": "UDF Table Name",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "NumVal4",
+      "Description": "Numeric Value",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "StrVal4",
+      "Description": "String Value",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 64,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "MnyVal4",
+      "Description": "Monetary Value",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Cond5",
+      "Description": "Condition 5",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": [
+        [
+          "0",
+          ""
+        ],
+        [
+          "1",
+          "Federal Tax ID"
+        ],
+        [
+          "2",
+          "Ship-To Address"
+        ],
+        [
+          "3",
+          "Ship-To Street / PO Box"
+        ],
+        [
+          "4",
+          "Ship-To City"
+        ],
+        [
+          "5",
+          "Ship-To ZIP Code"
+        ],
+        [
+          "6",
+          "Ship-To County"
+        ],
+        [
+          "7",
+          "Ship-To State"
+        ],
+        [
+          "8",
+          "Ship-To Country"
+        ],
+        [
+          "9",
+          "Item"
+        ],
+        [
+          "10",
+          "Item Group"
+        ],
+        [
+          "11",
+          "Business Partner"
+        ],
+        [
+          "12",
+          "Customer Group"
+        ],
+        [
+          "13",
+          "Vendor Group"
+        ],
+        [
+          "14",
+          "Warehouse"
+        ],
+        [
+          "15",
+          "G/L Account"
+        ],
+        [
+          "16",
+          "Customer Equalization tax"
+        ],
+        [
+          "17",
+          "Tax Status"
+        ],
+        [
+          "18",
+          "Freight"
+        ],
+        [
+          "19",
+          "UDF"
+        ]
+      ],
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "UdfTable5",
+      "Description": "UDF Table Name",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "NumVal5",
+      "Description": "Numeric Value",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "StrVal5",
+      "Description": "String Value",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 64,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "MnyVal5",
+      "Description": "Monetary Value",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Descr",
+      "Description": "Description",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 250,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "LnTaxCode",
+      "Description": "Line Tax Code",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "FrLnTax",
+      "Description": "Line Freight Tax",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "FrHdrTax",
+      "Description": "Header Freight Tax",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "UDFAlias1",
+      "Description": "UDF Field Alias",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 18,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "UDFAlias2",
+      "Description": "UDF Field Alias",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 18,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "UDFAlias3",
+      "Description": "UDF Field Alias",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 18,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "UDFAlias4",
+      "Description": "UDF Field Alias",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 18,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "UDFAlias5",
+      "Description": "UDF Field Alias",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 18,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

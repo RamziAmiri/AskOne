@@ -1,0 +1,47 @@
+{
+  "Category": "Sales_Oppurtunities",
+  "TableName": "OPR5",
+  "Description": "Sales \n Opportunity - Reasons",
+  "PrimaryKeys": [
+    "OpportId",
+    "Line"
+  ],
+  "Fields": [
+    {
+      "Field": "OpportId",
+      "Description": "Sequence No.",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Line",
+      "Description": "Row No.",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ReasondId",
+      "Description": "Reason",
+      "Related": "OOFR",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

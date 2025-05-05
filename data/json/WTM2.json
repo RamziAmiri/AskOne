@@ -1,0 +1,59 @@
+{
+  "Category": "Administration",
+  "TableName": "WTM2",
+  "Description": "Confirmation \n Templates - Stages",
+  "PrimaryKeys": [
+    "WtmCode",
+    "WstCode"
+  ],
+  "Fields": [
+    {
+      "Field": "WtmCode",
+      "Description": "Code",
+      "Related": "OWTM",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "WstCode",
+      "Description": "Stage",
+      "Related": "OWST",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "SortId",
+      "Description": "Sort Code",
+      "Related": "",
+      "DefaultValue": "1",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Remarks",
+      "Description": "Description",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 100,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

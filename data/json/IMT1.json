@@ -1,0 +1,80 @@
+{
+  "Category": "Inventory_and_Production",
+  "TableName": "IMT1",
+  "Description": "Acct \n data in selected template",
+  "PrimaryKeys": [
+    "TemplateId",
+    "AccountId"
+  ],
+  "Fields": [
+    {
+      "Field": "TemplateId",
+      "Description": "Template ID",
+      "Related": "OIMT",
+      "DefaultValue": "-1",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "AccountId",
+      "Description": "Account ID",
+      "Related": "",
+      "DefaultValue": "-1",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DebitCredi",
+      "Description": "Debit or Credit",
+      "Related": "",
+      "DefaultValue": "U",
+      "ValidValues": [
+        [
+          "U",
+          "Unknown"
+        ],
+        [
+          "D",
+          "DEBIT"
+        ],
+        [
+          "C",
+          "CREDIT"
+        ],
+        [
+          "B",
+          "Both"
+        ],
+        [
+          "T",
+          "Total"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "OrderCalc",
+      "Description": "Order Calc",
+      "Related": "",
+      "DefaultValue": "-1",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

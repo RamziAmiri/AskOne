@@ -1,0 +1,79 @@
+{
+  "Category": "Administration",
+  "TableName": "OMAO",
+  "Description": "Mobile Add-On \n Setting",
+  "PrimaryKeys": [
+    "Code"
+  ],
+  "Fields": [
+    {
+      "Field": "Code",
+      "Description": "Add-On Code",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Name",
+      "Description": "Add-On Name",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 200,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "URL",
+      "Description": "Add-On URL",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "ntext",
+      "SqlSize": 1073741823,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Type",
+      "Description": "Add-On Type",
+      "Related": "",
+      "DefaultValue": "M",
+      "ValidValues": [
+        [
+          "M",
+          "Module Add-On"
+        ],
+        [
+          "H",
+          "Home Add-On"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Provider",
+      "Description": "Add-On Provider",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 200,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

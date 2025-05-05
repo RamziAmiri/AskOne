@@ -1,0 +1,160 @@
+{
+  "Category": "Finance",
+  "TableName": "OTAX",
+  "Description": "VAT Transactions",
+  "PrimaryKeys": [
+    "AbsEntry"
+  ],
+  "Fields": [
+    {
+      "Field": "AbsEntry",
+      "Description": "Internal Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "SrcObjType",
+      "Description": "Source Object Type",
+      "Related": "",
+      "DefaultValue": "-1",
+      "ValidValues": [
+        [
+          "-1",
+          ""
+        ],
+        [
+          "13",
+          "A/R Invoice"
+        ],
+        [
+          "14",
+          "A/R Credit Memo"
+        ],
+        [
+          "165",
+          "Correction A/R Invoice"
+        ],
+        [
+          "166",
+          "Correction A/R Invoice Reversals"
+        ],
+        [
+          "18",
+          "A/P Invoice"
+        ],
+        [
+          "19",
+          "A/P Credit Memo"
+        ],
+        [
+          "163",
+          "Correction A/P Invoice"
+        ],
+        [
+          "164",
+          "Correction A/P Invoice Reversals"
+        ],
+        [
+          "46",
+          "Outgoing Payment"
+        ],
+        [
+          "24",
+          "Incoming Payment"
+        ],
+        [
+          "57",
+          "Check for Payment"
+        ],
+        [
+          "30",
+          "Journal Transaction"
+        ],
+        [
+          "67",
+          "Warehouse Transfer"
+        ],
+        [
+          "25",
+          "Deposit"
+        ],
+        [
+          "321",
+          "Internal Reconciliation"
+        ],
+        [
+          "76",
+          "Deposit Temporary"
+        ],
+        [
+          "140000010",
+          "Incoming Excise Invoice"
+        ],
+        [
+          "140000009",
+          "Outgoing Excise Invoice"
+        ],
+        [
+          "69",
+          "Import file"
+        ]
+      ],
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": false,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "SrcObjAbs",
+      "Description": "Source Object Internal ID",
+      "Related": "",
+      "DefaultValue": "-1",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "OrdinLNum",
+      "Description": "Ordial Num (BTF & Canceled)",
+      "Related": "",
+      "DefaultValue": "-1",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Cancelled",
+      "Description": "Cancelled",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "N",
+          "No"
+        ],
+        [
+          "Y",
+          "Yes"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

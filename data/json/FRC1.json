@@ -1,0 +1,204 @@
+{
+  "Category": "Finance",
+  "TableName": "FRC1",
+  "Description": "Extend \n Cat. f. Financial Rep.",
+  "PrimaryKeys": [
+    "CatId",
+    "TemplateId",
+    "AcctCode",
+    "VisOrder"
+  ],
+  "Fields": [
+    {
+      "Field": "CatId",
+      "Description": "Numerator",
+      "Related": "OFRC",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "TemplateId",
+      "Description": "Template",
+      "Related": "OFRT",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "AcctCode",
+      "Description": "Account Code",
+      "Related": "OACT",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 15,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "VisOrder",
+      "Description": "Display Order",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CFWId",
+      "Description": "Cash Flow Line Item ID",
+      "Related": "OCFW",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CalcMethod",
+      "Description": "Calculation Method",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": [
+        [
+          "BOP",
+          "Beginning of Period"
+        ],
+        [
+          "EOP",
+          "End of Period"
+        ],
+        [
+          "CPID",
+          "Current Period In Debit"
+        ],
+        [
+          "CPIC",
+          "Current Period In Credit"
+        ],
+        [
+          "CPIB",
+          "Current Period In Both"
+        ]
+      ],
+      "SqlType": "nvarchar",
+      "SqlSize": 30,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "SlpCode",
+      "Description": "Sales Unit Code",
+      "Related": "OSLP",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "PrcCode",
+      "Description": "Cost Center Code",
+      "Related": "OPRC",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CalMethod2",
+      "Description": "Calculation Method 2",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 30,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CalMethod3",
+      "Description": "Calculation Method 3",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 30,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Linked",
+      "Description": "Linked",
+      "Related": "",
+      "DefaultValue": "B",
+      "ValidValues": [
+        [
+          "B",
+          "Balance"
+        ],
+        [
+          "D",
+          "Debit"
+        ],
+        [
+          "C",
+          "Credit"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Sign",
+      "Description": "Sign",
+      "Related": "",
+      "DefaultValue": "E",
+      "ValidValues": [
+        [
+          "E",
+          ""
+        ],
+        [
+          "P",
+          "Positive"
+        ],
+        [
+          "N",
+          "Negative"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

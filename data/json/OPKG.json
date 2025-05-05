@@ -1,0 +1,34 @@
+{
+  "Category": "Inventory_and_Production",
+  "TableName": "OPKG",
+  "Description": "Package Types",
+  "PrimaryKeys": [
+    "PkgCode"
+  ],
+  "Fields": [
+    {
+      "Field": "PkgCode",
+      "Description": "Code",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "PkgType",
+      "Description": "Type",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 30,
+      "IsNullable": false,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

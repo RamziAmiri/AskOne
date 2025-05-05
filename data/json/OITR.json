@@ -1,0 +1,523 @@
+{
+  "Category": "Banking",
+  "TableName": "OITR",
+  "Description": "Internal \n Reconciliation",
+  "PrimaryKeys": [
+    "ReconNum"
+  ],
+  "Fields": [
+    {
+      "Field": "ReconNum",
+      "Description": "Reconciliation Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "IsCard",
+      "Description": "BP or Account",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": [
+        [
+          "C",
+          "BP"
+        ],
+        [
+          "A",
+          "G/L Account"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ReconType",
+      "Description": "Reconciliation Type",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": [
+        [
+          "0",
+          "Manual"
+        ],
+        [
+          "1",
+          "Automatic"
+        ],
+        [
+          "2",
+          "Semi-Automatic"
+        ],
+        [
+          "3",
+          "Payment"
+        ],
+        [
+          "4",
+          "Credit Memo"
+        ],
+        [
+          "5",
+          "Reversal"
+        ],
+        [
+          "6",
+          "Zero Value"
+        ],
+        [
+          "7",
+          "Cancellation"
+        ],
+        [
+          "8",
+          "BoE"
+        ],
+        [
+          "9",
+          "Deposit"
+        ],
+        [
+          "10",
+          "Bank Statement Processing"
+        ],
+        [
+          "11",
+          "Period Closing"
+        ],
+        [
+          "12",
+          "Correction Invoice"
+        ]
+      ],
+      "SqlType": "nvarchar",
+      "SqlSize": 2,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ReconDate",
+      "Description": "Reconciliation Date",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "datetime",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Total",
+      "Description": "Total Reconciliation Amount",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ReconCurr",
+      "Description": "Reconciliation Currency",
+      "Related": "OCRN",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 3,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Canceled",
+      "Description": "Cancelled",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "Y",
+          "Yes"
+        ],
+        [
+          "N",
+          "No"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CancelAbs",
+      "Description": "Canceling/-ed Reconciliation",
+      "Related": "OITR",
+      "DefaultValue": "0",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "IsSystem",
+      "Description": "System or Manual",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": [
+        [
+          "Y",
+          "Yes"
+        ],
+        [
+          "N",
+          "No"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "InitObjTyp",
+      "Description": "Reconc. Initiator Object Type",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "InitObjAbs",
+      "Description": "Reconc. Initiator Internal ID",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CreateDate",
+      "Description": "Creation Date",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "datetime",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CreateTime",
+      "Description": "Creation Time",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DataSource",
+      "Description": "Data Source",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "N",
+          "Unknown"
+        ],
+        [
+          "I",
+          "Interface"
+        ],
+        [
+          "U",
+          "Update"
+        ],
+        [
+          "M",
+          "Import"
+        ],
+        [
+          "O",
+          "OBServer"
+        ],
+        [
+          "A",
+          "Auto Incr."
+        ],
+        [
+          "D",
+          "Data Doc."
+        ],
+        [
+          "P",
+          "Partner Implementation"
+        ],
+        [
+          "T",
+          "Year Transfer"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "UserSign",
+      "Description": "User Signature",
+      "Related": "OUSR",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ReconRule1",
+      "Description": "Reconciliation Rule 1",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": [
+        [
+          "0",
+          "Posting Date"
+        ],
+        [
+          "1",
+          "Due Date"
+        ],
+        [
+          "2",
+          "Document Date"
+        ],
+        [
+          "3",
+          "Ref. 1"
+        ],
+        [
+          "4",
+          "Ref. 2"
+        ],
+        [
+          "5",
+          "Ref. 3"
+        ],
+        [
+          "6",
+          "Project Code"
+        ],
+        [
+          "7",
+          "Control Account Code"
+        ],
+        [
+          "8",
+          "Posting Period"
+        ]
+      ],
+      "SqlType": "nvarchar",
+      "SqlSize": 2,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ReconRule2",
+      "Description": "Reconciliation Rule 2",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": [
+        [
+          "0",
+          "Posting Date"
+        ],
+        [
+          "1",
+          "Due Date"
+        ],
+        [
+          "2",
+          "Document Date"
+        ],
+        [
+          "3",
+          "Ref. 1"
+        ],
+        [
+          "4",
+          "Ref. 2"
+        ],
+        [
+          "5",
+          "Ref. 3"
+        ],
+        [
+          "6",
+          "Project Code"
+        ],
+        [
+          "7",
+          "Control Account Code"
+        ],
+        [
+          "8",
+          "Posting Period"
+        ]
+      ],
+      "SqlType": "nvarchar",
+      "SqlSize": 2,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ReconRule3",
+      "Description": "Reconciliation Rule 3",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": [
+        [
+          "0",
+          "Posting Date"
+        ],
+        [
+          "1",
+          "Due Date"
+        ],
+        [
+          "2",
+          "Document Date"
+        ],
+        [
+          "3",
+          "Ref. 1"
+        ],
+        [
+          "4",
+          "Ref. 2"
+        ],
+        [
+          "5",
+          "Ref. 3"
+        ],
+        [
+          "6",
+          "Project Code"
+        ],
+        [
+          "7",
+          "Control Account Code"
+        ],
+        [
+          "8",
+          "Posting Period"
+        ]
+      ],
+      "SqlType": "nvarchar",
+      "SqlSize": 2,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "IsMultiBP",
+      "Description": "Multiple BP Reconciliation",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "N",
+          "No"
+        ],
+        [
+          "Y",
+          "Yes"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "VersionNum",
+      "Description": "Version Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 11,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "OldMatNum",
+      "Description": "Previous Reconciliation Number",
+      "Related": "",
+      "DefaultValue": "0",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ReconJEId",
+      "Description": "JE no. created by reconciliatn",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "BuildDesc",
+      "Description": "Build Descriptor",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 50,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

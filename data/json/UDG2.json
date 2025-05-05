@@ -1,0 +1,47 @@
+{
+  "Category": "Administration",
+  "TableName": "UDG2",
+  "Description": "User \n Defaults - Credit Cards",
+  "PrimaryKeys": [
+    "Code",
+    "CreditCard"
+  ],
+  "Fields": [
+    {
+      "Field": "Code",
+      "Description": "Code",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CreditCard",
+      "Description": "Credit Card Code",
+      "Related": "OCRC",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "AcctCode",
+      "Description": "Credit Amount Code",
+      "Related": "OACT",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 15,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

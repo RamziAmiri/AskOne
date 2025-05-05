@@ -1,0 +1,97 @@
+{
+  "Category": "Administration",
+  "TableName": "DGP5",
+  "Description": "Sort By List",
+  "PrimaryKeys": [
+    "AbsEntry",
+    "CondNum"
+  ],
+  "Fields": [
+    {
+      "Field": "AbsEntry",
+      "Description": "Internal Number",
+      "Related": "ODGP",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CondNum",
+      "Description": "Condition Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "SortField",
+      "Description": "Sort Field",
+      "Related": "",
+      "DefaultValue": "DocNum",
+      "ValidValues": [
+        [
+          "-1",
+          ""
+        ],
+        [
+          "DocNum",
+          "Document Number"
+        ],
+        [
+          "DocDate",
+          "Posting Date"
+        ],
+        [
+          "DocDueDate",
+          "Due Date"
+        ],
+        [
+          "NumAtCard",
+          "BP Reference No."
+        ],
+        [
+          "DocTotal",
+          "Document Amount"
+        ],
+        [
+          "SlpCode",
+          "Sales Employee"
+        ]
+      ],
+      "SqlType": "nvarchar",
+      "SqlSize": 100,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "SortOrder",
+      "Description": "Sort Order",
+      "Related": "",
+      "DefaultValue": "A",
+      "ValidValues": [
+        [
+          "A",
+          "Asscending"
+        ],
+        [
+          "D",
+          "Descending"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

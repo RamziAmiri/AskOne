@@ -1,0 +1,47 @@
+{
+  "Category": "Administration",
+  "TableName": "CHEN",
+  "Description": "Caching \n Update Notification",
+  "PrimaryKeys": [
+    "Component",
+    "ID"
+  ],
+  "Fields": [
+    {
+      "Field": "Component",
+      "Description": "Component",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ID",
+      "Description": "ID",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Counter",
+      "Description": "Counter",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

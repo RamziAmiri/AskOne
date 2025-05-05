@@ -1,0 +1,187 @@
+{
+  "Category": "Finance",
+  "TableName": "OGBI",
+  "Description": "GB Interface: \n Common Info",
+  "PrimaryKeys": [
+    "AbsEntry"
+  ],
+  "Fields": [
+    {
+      "Field": "AbsEntry",
+      "Description": "Numerator",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "RepNo",
+      "Description": "Report Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "RepCompany",
+      "Description": "Report Company Name",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 60,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "RepPeriod",
+      "Description": "Report Period",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Currency",
+      "Description": "Currency Unit",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 10,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "UserSign",
+      "Description": "User Signature",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CreateDate",
+      "Description": "Report Creation Date",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "RepType",
+      "Description": "Report Type",
+      "Related": "",
+      "DefaultValue": "0",
+      "ValidValues": [
+        [
+          "0",
+          ""
+        ],
+        [
+          "1",
+          "Electronic Account Book"
+        ],
+        [
+          "2",
+          "G/L Account Master Records"
+        ],
+        [
+          "3",
+          "Departments"
+        ],
+        [
+          "16",
+          "Employees"
+        ],
+        [
+          "4",
+          "Business Partners"
+        ],
+        [
+          "5",
+          "Projects"
+        ],
+        [
+          "6",
+          "G/L Account Balance"
+        ],
+        [
+          "7",
+          "Accounting Vouchers"
+        ],
+        [
+          "8",
+          "Enterprise's Balance Sheet"
+        ],
+        [
+          "9",
+          "Enterprise's Profit and Loss Statement"
+        ],
+        [
+          "10",
+          "Enterprise's Cash Flow Statement"
+        ],
+        [
+          "11",
+          "Devalue Provision of Enterprise Assets"
+        ],
+        [
+          "12",
+          "Shareholder's Rights and Interests Changing Report"
+        ],
+        [
+          "13",
+          "Enterprise's Profit Distribution Report"
+        ],
+        [
+          "14",
+          "Small Enterprise's Cash Flow Statement"
+        ],
+        [
+          "15",
+          "Enterprise's VAT Payable Detail Report"
+        ]
+      ],
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "RepEntity",
+      "Description": "Report Entity",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 60,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

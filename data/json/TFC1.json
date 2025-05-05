@@ -1,0 +1,59 @@
+{
+  "Category": "Administration",
+  "TableName": "TFC1",
+  "Description": "Tax \n Type Combination - Rows",
+  "PrimaryKeys": [
+    "TfcId",
+    "DispOrder"
+  ],
+  "Fields": [
+    {
+      "Field": "TfcId",
+      "Description": "TFC ID",
+      "Related": "OTFC",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DispOrder",
+      "Description": "Display Order",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "TypeId",
+      "Description": "Tax Type ID",
+      "Related": "OSTT",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "FmlId",
+      "Description": "Formula ID",
+      "Related": "OFML",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

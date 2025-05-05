@@ -1,0 +1,35 @@
+{
+  "Category": "Banking",
+  "TableName": "PYD1",
+  "Description": "Payment \n Terms Allowed in Payment Run",
+  "PrimaryKeys": [
+    "PYDCode",
+    "PYMCode"
+  ],
+  "Fields": [
+    {
+      "Field": "PYDCode",
+      "Description": "Payment Run Code",
+      "Related": "OPYD",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "PYMCode",
+      "Description": "Payment Method",
+      "Related": "OPYM",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 15,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    }
+  ]
+}

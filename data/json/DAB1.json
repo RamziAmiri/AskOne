@@ -1,0 +1,48 @@
+{
+  "Category": "Administration",
+  "TableName": "DAB1",
+  "Description": "Dashboard Queries",
+  "PrimaryKeys": [
+    "DsbEntry",
+    "QryCtgry",
+    "QryName"
+  ],
+  "Fields": [
+    {
+      "Field": "DsbEntry",
+      "Description": "Dashboard Entry",
+      "Related": "ODAB",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "QryCtgry",
+      "Description": "Query Category",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "QryName",
+      "Description": "Query Name",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 100,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "Category": "Administration",
+  "TableName": "OERX",
+  "Description": "Excise \n Register Numbering Ext",
+  "PrimaryKeys": [
+    "ErnId"
+  ],
+  "Fields": [
+    {
+      "Field": "ErnId",
+      "Description": "Excise Register Numbering ID",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Location",
+      "Description": "Loc.",
+      "Related": "OLCT",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "UserSign",
+      "Description": "User Signature",
+      "Related": "OUSR",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

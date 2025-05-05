@@ -1,0 +1,34 @@
+{
+  "Category": "Banking",
+  "TableName": "OCBI",
+  "Description": "Central Bank Ind.",
+  "PrimaryKeys": [
+    "Indicator"
+  ],
+  "Fields": [
+    {
+      "Field": "Indicator",
+      "Description": "Bank Indicator",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 15,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Dsc",
+      "Description": "Description",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 50,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

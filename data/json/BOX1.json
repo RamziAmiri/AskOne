@@ -1,0 +1,114 @@
+{
+  "Category": "Finance",
+  "TableName": "BOX1",
+  "Description": "Box Definition \n - Rows",
+  "PrimaryKeys": [
+    "BoxCode",
+    "SeqNum",
+    "ReportType"
+  ],
+  "Fields": [
+    {
+      "Field": "BoxCode",
+      "Description": "Group Code",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 30,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "BoxMember",
+      "Description": "Box Code",
+      "Related": "OBOX",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 30,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "VATMember",
+      "Description": "VAT Group",
+      "Related": "OVTG",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "SeqNum",
+      "Description": "Sequence Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "FormulSign",
+      "Description": "Formula Sign",
+      "Related": "",
+      "DefaultValue": "P",
+      "ValidValues": [
+        [
+          "P",
+          "+"
+        ],
+        [
+          "M",
+          "-"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ReportType",
+      "Description": "Report Type",
+      "Related": "",
+      "DefaultValue": "B",
+      "ValidValues": [
+        [
+          "B",
+          "Box Declaration"
+        ],
+        [
+          "S",
+          "BAS Reporting"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "EffecDate",
+      "Description": "Effective From",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "datetime",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

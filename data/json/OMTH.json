@@ -1,0 +1,264 @@
+{
+  "Category": "Banking",
+  "TableName": "OMTH",
+  "Description": "Reconciliation \n History",
+  "PrimaryKeys": [
+    "MthAcctCod",
+    "IsInternal",
+    "MatchNum"
+  ],
+  "Fields": [
+    {
+      "Field": "MthAcctCod",
+      "Description": "Account Code",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 15,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "IsInternal",
+      "Description": "Reconciliation Type",
+      "Related": "",
+      "DefaultValue": "E",
+      "ValidValues": [
+        [
+          "I",
+          "Internal"
+        ],
+        [
+          "E",
+          "External"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "MatchNum",
+      "Description": "Reconciliation No.",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Totals",
+      "Description": "Recon. Amount (One Side)",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "IsCard",
+      "Description": "Select BP or Account",
+      "Related": "",
+      "DefaultValue": "A",
+      "ValidValues": [
+        [
+          "A",
+          "G/L Account"
+        ],
+        [
+          "C",
+          "BP"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "MatchType",
+      "Description": "Reconciliation Type",
+      "Related": "",
+      "DefaultValue": "0",
+      "ValidValues": [
+        [
+          "0",
+          "Manual"
+        ],
+        [
+          "1",
+          "Ref. 1"
+        ],
+        [
+          "2",
+          "Ref. 2"
+        ],
+        [
+          "3",
+          "Ref. 3"
+        ],
+        [
+          "4",
+          "Posting Date"
+        ],
+        [
+          "5",
+          "Due Date"
+        ],
+        [
+          "6",
+          "Ref. 1 + Posting Date"
+        ],
+        [
+          "7",
+          "Ref. 2 + Posting Date"
+        ],
+        [
+          "8",
+          "Ref. 3 + Posting Date"
+        ],
+        [
+          "9",
+          "Ref. 1 + Due Date"
+        ],
+        [
+          "10",
+          "Ref. 2 + Due Date"
+        ],
+        [
+          "11",
+          "Ref. 3 + Due Date"
+        ],
+        [
+          "12",
+          "By Total"
+        ]
+      ],
+      "SqlType": "nvarchar",
+      "SqlSize": 2,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "TransId",
+      "Description": "Reconciliation Transaction No.",
+      "Related": "",
+      "DefaultValue": "-1",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "MatchDate",
+      "Description": "Reconciliation Date",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "datetime",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CurrType",
+      "Description": "Currency Type",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 3,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DataSource",
+      "Description": "Data Source",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "N",
+          "Unknown"
+        ],
+        [
+          "I",
+          "Interface"
+        ],
+        [
+          "U",
+          "Update"
+        ],
+        [
+          "M",
+          "Import"
+        ],
+        [
+          "O",
+          "DI API"
+        ],
+        [
+          "A",
+          "Doc. Generation Wizard"
+        ],
+        [
+          "D",
+          "Restore Wizard"
+        ],
+        [
+          "P",
+          "Partner Implementation"
+        ],
+        [
+          "T",
+          "Year Transfer"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "UserSign",
+      "Description": "User Signature",
+      "Related": "OUSR",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "createDate",
+      "Description": "Creation Date",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "datetime",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

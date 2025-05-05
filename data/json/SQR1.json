@@ -1,0 +1,35 @@
+{
+  "Category": "Reports",
+  "TableName": "SQR1",
+  "Description": "System Queries",
+  "PrimaryKeys": [
+    "InternlKey",
+    "Module"
+  ],
+  "Fields": [
+    {
+      "Field": "InternlKey",
+      "Description": "Internal ID",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Module",
+      "Description": "Module",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "Category": "Business_Partners",
+  "TableName": "OBPP",
+  "Description": "BP Priorities",
+  "PrimaryKeys": [
+    "PrioCode"
+  ],
+  "Fields": [
+    {
+      "Field": "PrioCode",
+      "Description": "Priority",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "PrioDesc",
+      "Description": "Priority Description",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 10,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

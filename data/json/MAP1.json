@@ -1,0 +1,150 @@
+{
+  "Category": "Administration",
+  "TableName": "MAP1",
+  "Description": "Input \n and Output of Mapping",
+  "PrimaryKeys": [
+    "MapID",
+    "Code"
+  ],
+  "Fields": [
+    {
+      "Field": "MapID",
+      "Description": "Mapping ID",
+      "Related": "OMAP",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Code",
+      "Description": "Code",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Type",
+      "Description": "Type",
+      "Related": "",
+      "DefaultValue": "NA",
+      "ValidValues": [
+        [
+          "CRYSTAL",
+          "Crystal Report"
+        ],
+        [
+          "XML",
+          "XML File"
+        ],
+        [
+          "NA",
+          "Not Avalible"
+        ],
+        [
+          "TXT",
+          "Text File"
+        ],
+        [
+          "CSV",
+          "CSV File"
+        ]
+      ],
+      "SqlType": "nvarchar",
+      "SqlSize": 10,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "RuleType",
+      "Description": "Rule Type",
+      "Related": "",
+      "DefaultValue": "NA",
+      "ValidValues": [
+        [
+          "XSLT",
+          "XSLT Rule"
+        ],
+        [
+          "NA",
+          "Not Avalible"
+        ],
+        [
+          "REGEX",
+          "Reguler expression"
+        ]
+      ],
+      "SqlType": "nvarchar",
+      "SqlSize": 10,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "RuleRef",
+      "Description": "Rule Reference ID",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 50,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "RefID",
+      "Description": "Reference ID",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 50,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "RuleVer",
+      "Description": "Rule Version",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 5,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "IsFinal",
+      "Description": "Is Final Result",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "Y",
+          "Yes"
+        ],
+        [
+          "N",
+          "No"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

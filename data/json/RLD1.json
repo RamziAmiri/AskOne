@@ -1,0 +1,118 @@
+{
+  "Category": "Administration",
+  "TableName": "RLD1",
+  "Description": "Reference \n Links Definition",
+  "PrimaryKeys": [
+    "AbsEntry",
+    "TargetType",
+    "TargetFld"
+  ],
+  "Fields": [
+    {
+      "Field": "AbsEntry",
+      "Description": "Internal Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "TargetType",
+      "Description": "Target Type",
+      "Related": "",
+      "DefaultValue": "H",
+      "ValidValues": [
+        [
+          "H",
+          "Header"
+        ],
+        [
+          "B",
+          "BP Row"
+        ],
+        [
+          "L",
+          "Row"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "TargetFld",
+      "Description": "Target Field",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 21,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "SourceFld",
+      "Description": "Source Field",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 21,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "OrderNum",
+      "Description": "Order Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "SourceType",
+      "Description": "Source Type",
+      "Related": "",
+      "DefaultValue": "E",
+      "ValidValues": [
+        [
+          "B",
+          "Base Document Reference"
+        ],
+        [
+          "C",
+          "Column"
+        ],
+        [
+          "D",
+          "Default"
+        ],
+        [
+          "E",
+          "Not defined"
+        ],
+        [
+          "I",
+          "Installment Number"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

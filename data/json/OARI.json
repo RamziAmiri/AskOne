@@ -1,0 +1,80 @@
+{
+  "Category": "Administration",
+  "TableName": "OARI",
+  "Description": "Add-On \n - Company Definitions",
+  "PrimaryKeys": [
+    "AddOnID"
+  ],
+  "Fields": [
+    {
+      "Field": "AddOnID",
+      "Description": "Add-On ID",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "EGroup",
+      "Description": "Execution Group",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": [
+        [
+          "A",
+          "Automatic"
+        ],
+        [
+          "M",
+          "Manual"
+        ],
+        [
+          "C",
+          "Critical"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "AStatus",
+      "Description": "Is add-on active?",
+      "Related": "",
+      "DefaultValue": "Y",
+      "ValidValues": [
+        [
+          "Y",
+          "Yes"
+        ],
+        [
+          "N",
+          "No"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "EventOrder",
+      "Description": "Add-on Event Order",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

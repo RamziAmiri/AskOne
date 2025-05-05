@@ -1,0 +1,59 @@
+{
+  "Category": "Reports",
+  "TableName": "LLR1",
+  "Description": "Electronic \n Report Generation Result - Reports",
+  "PrimaryKeys": [
+    "ResEntry",
+    "ReportNum"
+  ],
+  "Fields": [
+    {
+      "Field": "ResEntry",
+      "Description": "Result Internal ID",
+      "Related": "OLLR",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ReportNum",
+      "Description": "Report Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ReportCode",
+      "Description": "Report Code",
+      "Related": "RDOC",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Criteria",
+      "Description": "Selection Criteria",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "ntext",
+      "SqlSize": 1073741823,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

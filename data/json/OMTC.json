@@ -1,0 +1,132 @@
+{
+  "Category": "Banking",
+  "TableName": "OMTC",
+  "Description": "Bank \n Statement - Matching Criteria",
+  "PrimaryKeys": [
+    "DocEntry"
+  ],
+  "Fields": [
+    {
+      "Field": "DocEntry",
+      "Description": "Internal Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "MatchID",
+      "Description": "Form Type Index",
+      "Related": "",
+      "DefaultValue": "1",
+      "ValidValues": [
+        [
+          "1",
+          "Documents"
+        ],
+        [
+          "2",
+          "Internal Reconciliation"
+        ],
+        [
+          "3",
+          "External Reconciliation"
+        ]
+      ],
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Round",
+      "Description": "Rounding",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": [
+        [
+          "1",
+          "Round 1"
+        ],
+        [
+          "2",
+          "Round 2"
+        ],
+        [
+          "3",
+          "Round 3"
+        ]
+      ],
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "MtcRule",
+      "Description": "Matching Rule",
+      "Related": "",
+      "DefaultValue": "0",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "MtcAlias",
+      "Description": "Matching Alias",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 18,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Differnce",
+      "Description": "Difference",
+      "Related": "",
+      "DefaultValue": "0",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DiffAmnt",
+      "Description": "Amount Difference",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "RuleIndex",
+      "Description": "Rule Index",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

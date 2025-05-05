@@ -1,0 +1,144 @@
+{
+  "Category": "Administration",
+  "TableName": "WTM3",
+  "Description": "Approval \n Templates - Documents",
+  "PrimaryKeys": [
+    "WtmCode",
+    "TransType"
+  ],
+  "Fields": [
+    {
+      "Field": "WtmCode",
+      "Description": "Code",
+      "Related": "OWTM",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "TransType",
+      "Description": "Original Document",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": [
+        [
+          "23",
+          "Sales Quotation"
+        ],
+        [
+          "17",
+          "Sales Order"
+        ],
+        [
+          "15",
+          "Delivery"
+        ],
+        [
+          "16",
+          "Returns"
+        ],
+        [
+          "203",
+          "A/R Down Payment"
+        ],
+        [
+          "13",
+          "A/R Invoice"
+        ],
+        [
+          "165",
+          "A/R Correction Invoice"
+        ],
+        [
+          "166",
+          "A/R Correction Invoice Reversal"
+        ],
+        [
+          "14",
+          "A/R Credit Memo"
+        ],
+        [
+          "132",
+          "Correction Invoice"
+        ],
+        [
+          "(-",
+          "(-"
+        ],
+        [
+          "540000006",
+          "Purchase Quotation"
+        ],
+        [
+          "22",
+          "Purchase Order"
+        ],
+        [
+          "20",
+          "Goods Receipt PO"
+        ],
+        [
+          "21",
+          "Goods Returns"
+        ],
+        [
+          "204",
+          "A/P Down Payment"
+        ],
+        [
+          "18",
+          "A/P Invoice"
+        ],
+        [
+          "163",
+          "A/P Correction Invoice"
+        ],
+        [
+          "164",
+          "A/P Correction Invoice Reversal"
+        ],
+        [
+          "19",
+          "A/P Credit Memo"
+        ],
+        [
+          "(-",
+          "(-"
+        ],
+        [
+          "59",
+          "Goods Receipt"
+        ],
+        [
+          "60",
+          "Goods Issue"
+        ],
+        [
+          "67",
+          "Inventory Transfer"
+        ],
+        [
+          "(-",
+          "(-"
+        ],
+        [
+          "46",
+          "Outgoing Payment"
+        ],
+        [
+          "(-",
+          "(-"
+        ]
+      ],
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    }
+  ]
+}

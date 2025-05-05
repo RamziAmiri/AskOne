@@ -1,0 +1,34 @@
+{
+  "Category": "Sales_Oppurtunities",
+  "TableName": "OORL",
+  "Description": "Relationships",
+  "PrimaryKeys": [
+    "OrlCode"
+  ],
+  "Fields": [
+    {
+      "Field": "OrlCode",
+      "Description": "Relationship Code",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "OrlDesc",
+      "Description": "Relationship Description",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 100,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

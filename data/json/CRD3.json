@@ -1,0 +1,120 @@
+{
+  "Category": "Business_Partners",
+  "TableName": "CRD3",
+  "Description": "BP Control Account",
+  "PrimaryKeys": [
+    "CardCode",
+    "AcctType"
+  ],
+  "Fields": [
+    {
+      "Field": "CardCode",
+      "Description": "BP Code",
+      "Related": "OCRD",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 15,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "AcctType",
+      "Description": "Account Type",
+      "Related": "",
+      "DefaultValue": "M",
+      "ValidValues": [
+        [
+          "M",
+          "Domestic"
+        ],
+        [
+          "F",
+          "Foreign"
+        ],
+        [
+          "D",
+          "Down Payment"
+        ],
+        [
+          "A",
+          "Assets Account"
+        ],
+        [
+          "R",
+          "Bill of Exchange Accounts Receivable"
+        ],
+        [
+          "P",
+          "Bill of Exchange Accounts Payable"
+        ],
+        [
+          "C",
+          "Bill of Exchange on Collection"
+        ],
+        [
+          "S",
+          "Bill of Exchange Presentation"
+        ],
+        [
+          "Y",
+          "Assets Bill of Exchange Acct Payable"
+        ],
+        [
+          "I",
+          "Bill of Exchange Discounted"
+        ],
+        [
+          "U",
+          "Unpaid Bill of Exchange"
+        ],
+        [
+          "O",
+          "Open Debts"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "AcctCode",
+      "Description": "Account Code",
+      "Related": "OACT",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 15,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "LogInstane",
+      "Description": "Log Instance",
+      "Related": "",
+      "DefaultValue": "0",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ObjType",
+      "Description": "Object Type",
+      "Related": "",
+      "DefaultValue": "2",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

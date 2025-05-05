@@ -1,0 +1,41 @@
+{
+  "Category": "Administration",
+  "TableName": "NNM4",
+  "Description": "Document \n Numbering - Removed Serial Numbers",
+  "PrimaryKeys": [],
+  "Fields": [
+    {
+      "Field": "ObjectCode",
+      "Description": "Document",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": ""
+    },
+    {
+      "Field": "Series",
+      "Description": "Series",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DocSubType",
+      "Description": "Document Subtype",
+      "Related": "",
+      "DefaultValue": "--",
+      "ValidValues": ""
+    },
+    {
+      "Field": "Number",
+      "Description": "Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": ""
+    }
+  ]
+}

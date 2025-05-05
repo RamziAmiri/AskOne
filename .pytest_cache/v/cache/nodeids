@@ -1,0 +1,10 @@
+[
+  "tests/test_metadata_processor.py::test_build_faiss_index",
+  "tests/test_metadata_processor.py::test_create_embeddings",
+  "tests/test_metadata_processor.py::test_create_text_representation",
+  "tests/test_metadata_processor.py::test_extract_column_metadata",
+  "tests/test_metadata_processor.py::test_init",
+  "tests/test_metadata_processor.py::test_load_json_files",
+  "tests/test_metadata_processor.py::test_process_metadata",
+  "tests/test_metadata_processor.py::test_save_index"
+]

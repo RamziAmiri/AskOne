@@ -1,0 +1,60 @@
+{
+  "Category": "Administration",
+  "TableName": "STA1",
+  "Description": "Valid Period",
+  "PrimaryKeys": [
+    "StaCode",
+    "SttType",
+    "EfctDate"
+  ],
+  "Fields": [
+    {
+      "Field": "StaCode",
+      "Description": "Tax Parameter Code",
+      "Related": "OSTA",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "SttType",
+      "Description": "Tax Type",
+      "Related": "OSTT",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "EfctDate",
+      "Description": "Effective From",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "datetime",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Rate",
+      "Description": "Rate",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

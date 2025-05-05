@@ -1,0 +1,55 @@
+{
+  "Category": "Administration",
+  "TableName": "VIEWS",
+  "Description": "SQL Company Views",
+  "PrimaryKeys": [
+    "ViewName"
+  ],
+  "Fields": [
+    {
+      "Field": "ViewName",
+      "Description": "View Name",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 100,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ViewString",
+      "Description": "View String",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "ntext",
+      "SqlSize": 1073741823,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ViewType",
+      "Description": "View Type",
+      "Related": "",
+      "DefaultValue": "S",
+      "ValidValues": [
+        [
+          "S",
+          "Static"
+        ],
+        [
+          "D",
+          "Dynamic"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

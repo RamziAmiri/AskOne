@@ -1,0 +1,162 @@
+{
+  "Category": "Administration",
+  "TableName": "USR5",
+  "Description": "User Access Log",
+  "PrimaryKeys": [
+    "UserCode",
+    "Action",
+    "Date",
+    "Time"
+  ],
+  "Fields": [
+    {
+      "Field": "UserCode",
+      "Description": "User Code",
+      "Related": "OUSR",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Action",
+      "Description": "Performed Action",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": [
+        [
+          "I",
+          "Logon Succeeded"
+        ],
+        [
+          "F",
+          "Logon Failed"
+        ],
+        [
+          "O",
+          "Logoff"
+        ],
+        [
+          "C",
+          "Created"
+        ],
+        [
+          "S",
+          "Superuser Selected"
+        ],
+        [
+          "D",
+          "Superuser Deselected"
+        ],
+        [
+          "L",
+          "Locked"
+        ],
+        [
+          "U",
+          "Unlocked"
+        ],
+        [
+          "P",
+          "Password Changed"
+        ],
+        [
+          "N",
+          "Screen Unlock Failed"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ActionBy",
+      "Description": "User Who Performed the Action",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ClientIP",
+      "Description": "IP Address of Client Computer",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 200,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Date",
+      "Description": "Date",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "datetime",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Time",
+      "Description": "Time",
+      "Related": "",
+      "DefaultValue": "0",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ClientName",
+      "Description": "Hostname of Client Computer",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 32,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ProcessID",
+      "Description": "Process ID of B1 Application",
+      "Related": "",
+      "DefaultValue": "-1",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "SessionID",
+      "Description": "Connection Session ID",
+      "Related": "",
+      "DefaultValue": "-1",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

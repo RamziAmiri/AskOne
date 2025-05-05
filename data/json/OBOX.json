@@ -1,0 +1,237 @@
+{
+  "Category": "Finance",
+  "TableName": "OBOX",
+  "Description": "Box Definition",
+  "PrimaryKeys": [
+    "BoxCode",
+    "ReportType"
+  ],
+  "Fields": [
+    {
+      "Field": "BoxCode",
+      "Description": "Code",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 30,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "BoxName",
+      "Description": "Name",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 250,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "BoxType",
+      "Description": "Type",
+      "Related": "",
+      "DefaultValue": "V",
+      "ValidValues": [
+        [
+          "V",
+          "VAT Group"
+        ],
+        [
+          "B",
+          "Box"
+        ],
+        [
+          "A",
+          "Account"
+        ],
+        [
+          "M",
+          "Manual Input"
+        ],
+        [
+          "F",
+          "Formula"
+        ],
+        [
+          "S",
+          "Single Choice"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "SummayFld",
+      "Description": "Summary Field",
+      "Related": "",
+      "DefaultValue": "S",
+      "ValidValues": [
+        [
+          "B",
+          "Base Amount"
+        ],
+        [
+          "T",
+          "Tax Amount"
+        ],
+        [
+          "Q",
+          "EQ Base Amount"
+        ],
+        [
+          "E",
+          "EQ Tax Amount"
+        ],
+        [
+          "N",
+          "Non-Deductible Amount"
+        ],
+        [
+          "S",
+          ""
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DbtCrdt",
+      "Description": "Debit/Credit",
+      "Related": "",
+      "DefaultValue": "S",
+      "ValidValues": [
+        [
+          "D",
+          "Debit Side"
+        ],
+        [
+          "C",
+          "Credit Side"
+        ],
+        [
+          "B",
+          "Debit Side and Credit Side"
+        ],
+        [
+          "S",
+          ""
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Formula",
+      "Description": "Formula Syntax",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 250,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "SortOrder",
+      "Description": "Sort Order",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "AbsolutVa",
+      "Description": "Absolute Value",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "Y",
+          "Yes"
+        ],
+        [
+          "N",
+          "No"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ReportType",
+      "Description": "Report Type",
+      "Related": "",
+      "DefaultValue": "B",
+      "ValidValues": [
+        [
+          "B",
+          "Box Declaration"
+        ],
+        [
+          "S",
+          "BAS Report"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Inactive",
+      "Description": "Inactive",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "Y",
+          "Yes"
+        ],
+        [
+          "N",
+          "No"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "EffecDate",
+      "Description": "Effective From",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "datetime",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

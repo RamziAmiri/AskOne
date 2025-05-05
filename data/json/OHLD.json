@@ -1,0 +1,137 @@
+{
+  "Category": "Human_Resources",
+  "TableName": "OHLD",
+  "Description": "Holiday Table",
+  "PrimaryKeys": [
+    "HldCode"
+  ],
+  "Fields": [
+    {
+      "Field": "HldCode",
+      "Description": "Holidays Name",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "WndFrm",
+      "Description": "Weekend From",
+      "Related": "",
+      "DefaultValue": "6",
+      "ValidValues": [
+        [
+          "1",
+          "Sunday"
+        ],
+        [
+          "2",
+          "Monday"
+        ],
+        [
+          "3",
+          "Tuesday"
+        ],
+        [
+          "4",
+          "Wednesday"
+        ],
+        [
+          "5",
+          "Thursday"
+        ],
+        [
+          "6",
+          "Friday"
+        ],
+        [
+          "7",
+          "Saturday"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "WndTo",
+      "Description": "To",
+      "Related": "",
+      "DefaultValue": "1",
+      "ValidValues": [
+        [
+          "1",
+          "Sunday"
+        ],
+        [
+          "2",
+          "Monday"
+        ],
+        [
+          "3",
+          "Tuesday"
+        ],
+        [
+          "4",
+          "Wednesday"
+        ],
+        [
+          "5",
+          "Thursday"
+        ],
+        [
+          "6",
+          "Friday"
+        ],
+        [
+          "7",
+          "Saturday"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "isCurYear",
+      "Description": "Current Year",
+      "Related": "",
+      "DefaultValue": "Y",
+      "ValidValues": [
+        [
+          "Y",
+          "Yes"
+        ],
+        [
+          "N",
+          "No"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ignrWnd",
+      "Description": "Ignore Weekend",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": "",
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

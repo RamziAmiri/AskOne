@@ -1,0 +1,22 @@
+{
+  "Category": "Administration",
+  "TableName": "OPID",
+  "Description": "Period Indicator",
+  "PrimaryKeys": [
+    "Indicator"
+  ],
+  "Fields": [
+    {
+      "Field": "Indicator",
+      "Description": "Period Indicator",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 10,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    }
+  ]
+}

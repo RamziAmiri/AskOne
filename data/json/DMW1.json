@@ -1,0 +1,47 @@
+{
+  "Category": "Administration",
+  "TableName": "DMW1",
+  "Description": "Query List",
+  "PrimaryKeys": [
+    "PacCode",
+    "QueryCode"
+  ],
+  "Fields": [
+    {
+      "Field": "PacCode",
+      "Description": "Package Code",
+      "Related": "ODMW",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "QueryCode",
+      "Description": "Query Code",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "UserSign",
+      "Description": "User Signature",
+      "Related": "OUSR",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

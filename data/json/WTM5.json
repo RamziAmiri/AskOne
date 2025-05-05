@@ -1,0 +1,35 @@
+{
+  "Category": "Administration",
+  "TableName": "WTM5",
+  "Description": "Approval \n Templates - Queries",
+  "PrimaryKeys": [
+    "WtmCode",
+    "QueryId"
+  ],
+  "Fields": [
+    {
+      "Field": "WtmCode",
+      "Description": "Code",
+      "Related": "OWTM",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "QueryId",
+      "Description": "User Query Id",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    }
+  ]
+}

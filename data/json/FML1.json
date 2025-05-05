@@ -1,0 +1,133 @@
+{
+  "Category": "Administration",
+  "TableName": "FML1",
+  "Description": "Tax \n Formula Parameter Declaration",
+  "PrimaryKeys": [
+    "FmlId",
+    "DispOrder"
+  ],
+  "Fields": [
+    {
+      "Field": "FmlId",
+      "Description": "Formula ID",
+      "Related": "OFML",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DispOrder",
+      "Description": "Display Order",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "VarName",
+      "Description": "Variable Name",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 64,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Category",
+      "Description": "Category",
+      "Related": "",
+      "DefaultValue": "1",
+      "ValidValues": [
+        [
+          "1",
+          "Input"
+        ],
+        [
+          "2",
+          "Output"
+        ],
+        [
+          "3",
+          "In Out"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Parameter",
+      "Description": "Parameter",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "ntext",
+      "SqlSize": 1073741823,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DataType",
+      "Description": "Data Type",
+      "Related": "",
+      "DefaultValue": "S",
+      "ValidValues": [
+        [
+          "T",
+          "Tax Amounts"
+        ],
+        [
+          "S",
+          "Amounts"
+        ],
+        [
+          "P",
+          "Prices"
+        ],
+        [
+          "Q",
+          "Quantities"
+        ],
+        [
+          "%",
+          "Percents"
+        ],
+        [
+          "I",
+          "Integer"
+        ],
+        [
+          "A",
+          "String"
+        ],
+        [
+          "B",
+          "Boolean"
+        ],
+        [
+          "M",
+          "Measures"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

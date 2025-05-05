@@ -1,0 +1,73 @@
+{
+  "Category": "Inventory_and_Production",
+  "TableName": "UILM2",
+  "Description": "Inventory \n Account Substitute",
+  "PrimaryKeys": [
+    "MessageID",
+    "AccountId",
+    "DebitCredi"
+  ],
+  "Fields": [
+    {
+      "Field": "MessageID",
+      "Description": "Message ID",
+      "Related": "OILM",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "AccountId",
+      "Description": "Account ID",
+      "Related": "",
+      "DefaultValue": "-1",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "AcctCode",
+      "Description": "Account Code",
+      "Related": "OACT",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 15,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DebitCredi",
+      "Description": "Debit or Credit",
+      "Related": "",
+      "DefaultValue": "U",
+      "ValidValues": [
+        [
+          "U",
+          "Unknown"
+        ],
+        [
+          "D",
+          "Debit"
+        ],
+        [
+          "C",
+          "Credit"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    }
+  ]
+}

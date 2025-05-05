@@ -1,0 +1,35 @@
+{
+  "Category": "Administration",
+  "TableName": "WTM1",
+  "Description": "Approval \n Templates - Producers",
+  "PrimaryKeys": [
+    "WtmCode",
+    "UserID"
+  ],
+  "Fields": [
+    {
+      "Field": "WtmCode",
+      "Description": "Code",
+      "Related": "OWTM",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "UserID",
+      "Description": "User Code",
+      "Related": "OUSR",
+      "DefaultValue": "-1",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    }
+  ]
+}

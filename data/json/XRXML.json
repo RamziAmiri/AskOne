@@ -1,0 +1,47 @@
+{
+  "Category": "Reports",
+  "TableName": "XRXML",
+  "Description": "XLR company XML",
+  "PrimaryKeys": [
+    "XmlId",
+    "Global"
+  ],
+  "Fields": [
+    {
+      "Field": "XmlId",
+      "Description": "XmlId",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 40,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Xml",
+      "Description": "Xml",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "ntext",
+      "SqlSize": 1073741823,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Global",
+      "Description": "Global",
+      "Related": "",
+      "DefaultValue": "0",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    }
+  ]
+}

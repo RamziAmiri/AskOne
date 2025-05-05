@@ -1,0 +1,109 @@
+{
+  "Category": "Marketing_Documents",
+  "TableName": "WDD2",
+  "Description": "Documents \n for Approval - Terms",
+  "PrimaryKeys": [
+    "WddCode",
+    "CondId"
+  ],
+  "Fields": [
+    {
+      "Field": "WddCode",
+      "Description": "Internal ID",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CondId",
+      "Description": "Condition No.",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": [
+        [
+          "1",
+          "Deviation from credit line"
+        ],
+        [
+          "2",
+          "Deviation from obligo"
+        ],
+        [
+          "3",
+          "Gross profit %"
+        ],
+        [
+          "4",
+          "Discount %"
+        ],
+        [
+          "5",
+          "Deviation from budget"
+        ],
+        [
+          "6",
+          "Total document"
+        ]
+      ],
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "opCode",
+      "Description": "Ratio",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": [
+        [
+          "1",
+          "Greater than"
+        ],
+        [
+          "2",
+          "Greater or equal"
+        ],
+        [
+          "3",
+          "Less than"
+        ],
+        [
+          "4",
+          "Less or equal"
+        ],
+        [
+          "5",
+          "Equal"
+        ],
+        [
+          "6",
+          "Does not equal"
+        ]
+      ],
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "opValue",
+      "Description": "Value",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 40,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

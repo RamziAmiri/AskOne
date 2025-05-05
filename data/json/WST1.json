@@ -1,0 +1,35 @@
+{
+  "Category": "Administration",
+  "TableName": "WST1",
+  "Description": "Confirmation \n Level - Rows",
+  "PrimaryKeys": [
+    "WstCode",
+    "UserID"
+  ],
+  "Fields": [
+    {
+      "Field": "WstCode",
+      "Description": "Code",
+      "Related": "OWST",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "UserID",
+      "Description": "User Code",
+      "Related": "OUSR",
+      "DefaultValue": "-1",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    }
+  ]
+}

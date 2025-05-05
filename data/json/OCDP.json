@@ -1,0 +1,108 @@
+{
+  "Category": "Administration",
+  "TableName": "OCDP",
+  "Description": "Closing Date \n Procedure",
+  "PrimaryKeys": [
+    "ClsDateNum"
+  ],
+  "Fields": [
+    {
+      "Field": "ClsDateNum",
+      "Description": "Closing Date Procedure Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ClsDtCode",
+      "Description": "Closing Date Procedure Code",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 30,
+      "IsNullable": false,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "BsLineDate",
+      "Description": "Base Row Date",
+      "Related": "",
+      "DefaultValue": "S",
+      "ValidValues": [
+        [
+          "P",
+          "Posting Date"
+        ],
+        [
+          "S",
+          "System Date"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DueMonth",
+      "Description": "Start From",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "E",
+          "Month End"
+        ],
+        [
+          "H",
+          "Half Month"
+        ],
+        [
+          "Y",
+          "Month Start"
+        ],
+        [
+          "N",
+          ""
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ExtraMonth",
+      "Description": "Extra Month",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ExtraDay",
+      "Description": "Extra Day",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "Category": "Inventory_and_Production",
+  "TableName": "IPF2",
+  "Description": "Landed Costs \n - Costs",
+  "PrimaryKeys": [
+    "DocEntry",
+    "AlcCode",
+    "CostType"
+  ],
+  "Fields": [
+    {
+      "Field": "DocEntry",
+      "Description": "Landed Costs Internal ID",
+      "Related": "OIPF",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "AlcCode",
+      "Description": "Cost Code",
+      "Related": "OALC",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 2,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "OhType",
+      "Description": "Load by",
+      "Related": "",
+      "DefaultValue": "F",
+      "ValidValues": [
+        [
+          "F",
+          "Cash Value Before Customs"
+        ],
+        [
+          "C",
+          "Cash Value After Customs"
+        ],
+        [
+          "Q",
+          "Quantity"
+        ],
+        [
+          "W",
+          "Weight"
+        ],
+        [
+          "V",
+          "Volume"
+        ],
+        [
+          "A",
+          "Equal"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CostSum",
+      "Description": "Total Costs",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CostSumFC",
+      "Description": "Total Costs (FC)",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Factor",
+      "Description": "Factor",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CostType",
+      "Description": "Cost Type",
+      "Related": "",
+      "DefaultValue": "F",
+      "ValidValues": [
+        [
+          "F",
+          "Fixed Costs"
+        ],
+        [
+          "V",
+          "Variable Costs"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Locked",
+      "Description": "Locked",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "Y",
+          "Yes"
+        ],
+        [
+          "N",
+          "No"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "LaCAllcAcc",
+      "Description": "Landed Costs Alloc. Account",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 15,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CostSumSC",
+      "Description": "Total Costs (SC)",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "numeric",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "InCustCalc",
+      "Description": "Included in Customs Calc",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "Y",
+          "Yes"
+        ],
+        [
+          "N",
+          "No"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

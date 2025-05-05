@@ -1,0 +1,68 @@
+{
+  "Category": "Administration",
+  "TableName": "USR3",
+  "Description": "User Authorization",
+  "PrimaryKeys": [
+    "UserLink",
+    "PermId"
+  ],
+  "Fields": [
+    {
+      "Field": "UserLink",
+      "Description": "User Link",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "PermId",
+      "Description": "Authorization ID",
+      "Related": "OUPT",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Permission",
+      "Description": "Authorization",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "V",
+          "Various"
+        ],
+        [
+          "F",
+          "Full"
+        ],
+        [
+          "R",
+          "Read Only"
+        ],
+        [
+          "N",
+          "None"
+        ],
+        [
+          "U",
+          "Undefined Type"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

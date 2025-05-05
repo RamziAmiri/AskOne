@@ -1,0 +1,125 @@
+{
+  "Category": "Finance",
+  "TableName": "VTR2",
+  "Description": "Doc. Type Filter",
+  "PrimaryKeys": [
+    "AbsEntry",
+    "ObjectCode"
+  ],
+  "Fields": [
+    {
+      "Field": "AbsEntry",
+      "Description": "Internal Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ObjectCode",
+      "Description": "Object Code",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": [
+        [
+          "13",
+          "A/R Invoices"
+        ],
+        [
+          "14",
+          "A/R Credit Memos"
+        ],
+        [
+          "18",
+          "A/P Invoices"
+        ],
+        [
+          "19",
+          "A/P Credit Memos"
+        ],
+        [
+          "24",
+          "Incoming Payments"
+        ],
+        [
+          "30",
+          "Journal Entries"
+        ],
+        [
+          "46",
+          "Outgoing Payments"
+        ],
+        [
+          "57",
+          "Checks for Payment"
+        ],
+        [
+          "67",
+          "Inventory Transfers"
+        ],
+        [
+          "203",
+          "A/R Down Payment"
+        ],
+        [
+          "204",
+          "A/P Down Payment"
+        ]
+      ],
+      "SqlType": "nvarchar",
+      "SqlSize": 15,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "FromDocNo",
+      "Description": "Doc. Number From",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ToDocNo",
+      "Description": "To Doc Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Selected",
+      "Description": "Is Selected Object.",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "N",
+          "No"
+        ],
+        [
+          "Y",
+          "Yes"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "Category": "Sales_Oppurtunities",
+  "TableName": "OOND",
+  "Description": "Industries",
+  "PrimaryKeys": [
+    "IndCode"
+  ],
+  "Fields": [
+    {
+      "Field": "IndCode",
+      "Description": "Industry Code",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "IndName",
+      "Description": "Industry Name",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 15,
+      "IsNullable": false,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "IndDesc",
+      "Description": "Industry Description",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 30,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

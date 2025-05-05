@@ -1,0 +1,137 @@
+{
+  "Category": "Administration",
+  "TableName": "WTM4",
+  "Description": "Approval \n Templates - Terms",
+  "PrimaryKeys": [
+    "WtmCode",
+    "CondId"
+  ],
+  "Fields": [
+    {
+      "Field": "WtmCode",
+      "Description": "Code",
+      "Related": "OWTM",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CondId",
+      "Description": "Condition No.",
+      "Related": "",
+      "DefaultValue": "0",
+      "ValidValues": [
+        [
+          "1",
+          "Deviation from Credit Limit"
+        ],
+        [
+          "2",
+          "Deviation from Commitment"
+        ],
+        [
+          "3",
+          "Gross Profit %"
+        ],
+        [
+          "4",
+          "Discount %"
+        ],
+        [
+          "5",
+          "Deviation from Budget"
+        ],
+        [
+          "7",
+          "Quantity"
+        ],
+        [
+          "8",
+          "Item Code"
+        ],
+        [
+          "9",
+          "Total"
+        ],
+        [
+          "6",
+          "Total Document"
+        ],
+        [
+          "0",
+          "Undefined Type"
+        ]
+      ],
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "opCode",
+      "Description": "Ratio",
+      "Related": "",
+      "DefaultValue": "0",
+      "ValidValues": [
+        [
+          "1",
+          "Greater than"
+        ],
+        [
+          "2",
+          "Greater or Equal"
+        ],
+        [
+          "3",
+          "Less than"
+        ],
+        [
+          "4",
+          "Less or Equal"
+        ],
+        [
+          "5",
+          "Equal"
+        ],
+        [
+          "6",
+          "Does not equal"
+        ],
+        [
+          "7",
+          "In Range"
+        ],
+        [
+          "8",
+          "Not in Range"
+        ],
+        [
+          "0",
+          "Undefined Type"
+        ]
+      ],
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "opValue",
+      "Description": "Value",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 90,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

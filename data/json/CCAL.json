@@ -1,0 +1,69 @@
+{
+  "Category": "Finance",
+  "TableName": "CCAL",
+  "Description": "China \n Chart of Account Level Definition",
+  "PrimaryKeys": [
+    "lvlIAccLe"
+  ],
+  "Fields": [
+    {
+      "Field": "lvlIAccLe",
+      "Description": "Length First Level Accounts",
+      "Related": "",
+      "DefaultValue": "4",
+      "ValidValues": [
+        [
+          "4",
+          ""
+        ]
+      ],
+      "SqlType": "smallint",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "accLvlSet",
+      "Description": "Account Level Set",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "N",
+          ""
+        ],
+        [
+          "Y",
+          ""
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "balIndSet",
+      "Description": "Balance Dir Indicator Set",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "N",
+          ""
+        ],
+        [
+          "Y",
+          ""
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

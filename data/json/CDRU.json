@@ -1,0 +1,82 @@
+{
+  "Category": "Administration",
+  "TableName": "CDRU",
+  "Description": "Drag \n & Relate User Settings",
+  "PrimaryKeys": [
+    "UserID",
+    "ObjectId",
+    "PartOf"
+  ],
+  "Fields": [
+    {
+      "Field": "UserID",
+      "Description": "User ID",
+      "Related": "",
+      "DefaultValue": "-1",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "ObjectId",
+      "Description": "ObjectId",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 4,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "PartOf",
+      "Description": "PartOf",
+      "Related": "",
+      "DefaultValue": "C",
+      "ValidValues": [
+        [
+          "C",
+          "Category"
+        ],
+        [
+          "R",
+          "Report"
+        ],
+        [
+          "F",
+          "Table"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Disabled",
+      "Description": "Disabled",
+      "Related": "",
+      "DefaultValue": "N",
+      "ValidValues": [
+        [
+          "Y",
+          "Yes"
+        ],
+        [
+          "N",
+          "No"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

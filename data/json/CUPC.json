@@ -1,0 +1,67 @@
+{
+  "Category": "Administration",
+  "TableName": "CUPC",
+  "Description": "Upgrade Control",
+  "PrimaryKeys": [
+    "ObjectId"
+  ],
+  "Fields": [
+    {
+      "Field": "ObjectId",
+      "Description": "Object ID",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CntBefore",
+      "Description": "Before",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CntAfter",
+      "Description": "After",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "Reported",
+      "Description": "Reported",
+      "Related": "",
+      "DefaultValue": "O",
+      "ValidValues": [
+        [
+          "C",
+          "Reported"
+        ],
+        [
+          "O",
+          "Open"
+        ]
+      ],
+      "SqlType": "char",
+      "SqlSize": 1,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

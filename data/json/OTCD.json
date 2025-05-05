@@ -1,0 +1,75 @@
+{
+  "Category": "Administration",
+  "TableName": "OTCD",
+  "Description": "Tax Code \n Determination",
+  "PrimaryKeys": [
+    "AbsId"
+  ],
+  "Fields": [
+    {
+      "Field": "AbsId",
+      "Description": "Internal Number",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "TcdType",
+      "Description": "Determination Type",
+      "Related": "",
+      "DefaultValue": "MI",
+      "ValidValues": [
+        [
+          "MI",
+          "Material Item"
+        ],
+        [
+          "SI",
+          "Service Item"
+        ],
+        [
+          "SD",
+          "Service Document"
+        ],
+        [
+          "WT",
+          "Withholding Tax"
+        ]
+      ],
+      "SqlType": "nvarchar",
+      "SqlSize": 2,
+      "IsNullable": false,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DftArCode",
+      "Description": "Default Sales Tax Code",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    },
+    {
+      "Field": "DftApCode",
+      "Description": "Default Purchase Tax Code",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 8,
+      "IsNullable": true,
+      "IsPrimaryKey": false,
+      "IsIdentity": false
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "Category": "Service",
+  "TableName": "QUE1",
+  "Description": "Queue Members",
+  "PrimaryKeys": [
+    "queueID",
+    "member"
+  ],
+  "Fields": [
+    {
+      "Field": "queueID",
+      "Description": "Queue ID",
+      "Related": "OQUE",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "nvarchar",
+      "SqlSize": 20,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "member",
+      "Description": "Member Name",
+      "Related": "OUSR",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    }
+  ]
+}

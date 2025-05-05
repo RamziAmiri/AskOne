@@ -1,0 +1,35 @@
+{
+  "Category": "Banking",
+  "TableName": "DPS1",
+  "Description": "Deposit - Rows",
+  "PrimaryKeys": [
+    "DepositId",
+    "CheckKey"
+  ],
+  "Fields": [
+    {
+      "Field": "DepositId",
+      "Description": "Deposit Key",
+      "Related": "ODPS",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    },
+    {
+      "Field": "CheckKey",
+      "Description": "Check Key",
+      "Related": "",
+      "DefaultValue": "",
+      "ValidValues": "",
+      "SqlType": "int",
+      "SqlSize": null,
+      "IsNullable": false,
+      "IsPrimaryKey": true,
+      "IsIdentity": false
+    }
+  ]
+}
